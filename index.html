@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lebustore</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  </head>
+
+  <body>
+    <!-- Start Top Nav -->
+    <!-- <nav
+      class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block"
+      id="lebustore_nav_top"
+    >
+      <div class="container text-light">
+        <div class="w-100 d-flex justify-content-between">
+          <div>
+            <i class="fa fa-envelope mx-2"></i>
+            <a
+              class="navbar-sm-brand text-light text-decoration-none"
+              href="mailto:info@company.com"
+              >info@company.com</a
+            >
+            <i class="fa fa-phone mx-2"></i>
+            <a
+              class="navbar-sm-brand text-light text-decoration-none"
+              href="tel:010-020-0340"
+              >010-020-0340</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-light"
+              href="https://fb.com/lebustore"
+              target="_blank"
+              rel="sponsored"
+              ><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i
+            ></a>
+            <a
+              class="text-light"
+              href="https://www.instagram.com/"
+              target="_blank"
+              ><i class="fab fa-instagram fa-sm fa-fw me-2"></i
+            ></a>
+            <a class="text-light" href="https://twitter.com/" target="_blank"
+              ><i class="fab fa-twitter fa-sm fa-fw me-2"></i
+            ></a>
+            <a
+              class="text-light"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-sm fa-fw"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <!-- Close Top Nav -->
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow header-section">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a
+          class="navbar-brand text-success logo h1 align-self-center"
+          href="index.html"
+        >
+          <img src="assets/img/LebuStore.png" alt="" />
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#lebustore_main_nav"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="lebustore_main_nav"
+        >
+          <div class="flex-fill">
+            <ul class="nav navbar-nav d-flex gap-4 mx-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product-details.html"
+                  >Product Details</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar align-self-center d-flex">
+            <div
+              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputMobileSearch"
+                  placeholder="Search ..."
+                />
+                <div class="input-group-text">
+                  <i class="fa fa-fw fa-search"></i>
+                </div>
+              </div>
+            </div>
+            <a
+              class="nav-icon d-none d-lg-inline"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#lebustore_search"
+            >
+              <i class="fa fa-fw fa-search text-dark mr-2"></i>
+            </a>
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+              <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >7</span
+              >
+            </a>
+            <a class="nav-icon position-relative text-decoration-none" href="#">
+              <i class="fa fa-fw fa-user text-dark mr-3"></i>
+              <span
+                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
+                >+99</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-white"
+      id="lebustore_search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <form
+          action=""
+          method="get"
+          class="modal-content modal-body border-0 p-0"
+        >
+          <div class="input-group mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="inputModalSearch"
+              name="q"
+              placeholder="Search ..."
+            />
+            <button
+              type="submit"
+              class="input-group-text bg-success text-light"
+            >
+              <i class="fa fa-fw fa-search text-white"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Start Banner Hero -->
+    <!-- <div
+      id="Lebustore-hero-carousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#Lebustore-hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li
+          data-bs-target="#Lebustore-hero-carousel"
+          data-bs-slide-to="1"
+        ></li>
+        <li
+          data-bs-target="#Lebustore-hero-carousel"
+          data-bs-slide-to="2"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/banner_img_01.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left align-self-center">
+                  <h1 class="h1 text-success"><b>Lebustore</b> eCommerce</h1>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe possimus aspernatur dolorem numquam quisquam alias
+                    vitae illum. Repellendus at velit enim voluptates a dolorem
+                    fuga tempore, quas, repellat cum quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/banner_img_02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1 class="h1">Proident occaecat</h1>
+                  <h3 class="h2">Aliquip ex ea commodo consequat</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe possimus aspernatur dolorem numquam quisquam alias
+                    vitae illum. Repellendus at velit enim voluptates a dolorem
+                    fuga tempore, quas, repellat cum quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/banner_img_03.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1>Repr in voluptate</h1>
+                  <h3 class="h2">Ullamco laboris nisi ut</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe possimus aspernatur dolorem numquam quisquam alias
+                    vitae illum. Repellendus at velit enim voluptates a dolorem
+                    fuga tempore, quas, repellat cum quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev text-decoration-none w-auto ps-3"
+        href="#Lebustore-hero-carousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a
+        class="carousel-control-next text-decoration-none w-auto pe-3"
+        href="#Lebustore-hero-carousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div> -->
+
+    <section class="">
+      <div class="card bg-dark text-white border-0">
+        <img src="assets/img/banner-bg.png" class="card-img" alt="..." />
+        <div
+          class="card-img-overlay d-flex justify-content-center align-items-center"
+        >
+          <div class="text-center py-5">
+            <h1 class="card-title fs-md-1 fs-4">
+              Only the best Discounts & Coupons
+            </h1>
+            <p class="card-text fs-md-4 fs-6">
+              You will never have to pay for anything in full again
+            </p>
+            <div
+              style="background-color: rgba(0, 0, 0, 0.801)"
+              class="px-4 rounded-pill mt-md-5"
+            >
+              <div class="row align-items-center">
+                <div class="select-section border-end col-4 border-light">
+                  <div class="select">
+                    <span class="select__flag"></span>
+                    <select
+                      class="select__input"
+                      name="country-selector"
+                      id="country-selector"
+                    >
+                      <!-- <option value="0">Select Country</option> -->
+                      <option value="IT">Italy</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Spain</option>
+                    </select>
+
+                    <svg class="select__arrow" viewBox="0 0 16 16">
+                      <polyline
+                        points="3.5,6.5 8,11 12.5,6.5"
+                        stroke-width="2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <div class="input-group-prepend w-100">
+                        <span class="d-flex gap-2 align-items-center">
+                          <i class="fas fa-search"></i>
+                          <input
+                            type="text"
+                            class="form-control border-0 search-field"
+                            placeholder="Search Discounts & Coupons "
+                          />
+                        </span>
+                      </div>
+
+                      <div class="input-group-append">
+                        <i class="fas fa-arrow-right text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Hero -->
+
+    <!-- Start Categories of The Month -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row pt-3">
+          <div
+            class="col d-flex justify-content-between py-2 align-items-center"
+          >
+            <h2 class="text-success">
+              <!-- <span style="color: orange">Brows</span>  -->
+              Categories
+            </h2>
+            <h6 class="text-uppercase">
+              View All <i class="fa fa-arrow-right text-success"></i>
+            </h6>
+          </div>
+          <hr />
+        </div>
+        <!-- <div class="row">
+          <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"
+              ><img
+                src="./assets/img/category_img_01.jpg"
+                class="rounded-circle img-fluid border"
+            /></a>
+            <h5 class="text-center mt-3 mb-3">Watches</h5>
+            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          </div>
+          <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"
+              ><img
+                src="./assets/img/category_img_02.jpg"
+                class="rounded-circle img-fluid border"
+            /></a>
+            <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
+            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          </div>
+          <div class="col-12 col-md-4 p-5 mt-3">
+            <a href="#"
+              ><img
+                src="./assets/img/category_img_03.jpg"
+                class="rounded-circle img-fluid border"
+            /></a>
+            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
+            <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
+          </div>
+        </div> -->
+        <div class="row pt-5">
+          <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow position-relative">
+              <div class="h1 text-success text-center">
+                <i class="fas fa-charging-station"></i>
+              </div>
+              <h2 class="h5 mt-4 text-center">Electronics</h2>
+              <div class="color-element fw-bold">20</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow position-relative">
+              <div class="h1 text-success text-center">
+                <i class="fa fa-tshirt"></i>
+              </div>
+              <h2 class="h5 mt-4 text-center">Fashion</h2>
+              <div class="color-element fw-bold">20</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow position-relative">
+              <div class="h1 text-success text-center">
+                <i class="fa fa-hand-holding-water"></i>
+              </div>
+              <h2 class="h5 mt-4 text-center">FMCG</h2>
+              <div class="color-element fw-bold">20</div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow position-relative">
+              <div class="h1 text-success text-center">
+                <i class="fa fa-shoe-prints"></i>
+              </div>
+              <h2 class="h5 mt-4 text-center">Groceries</h2>
+              <div class="color-element fw-bold">20</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Categories of The Month -->
+
+    <!-- Biggest deals Start -->
+    <section>
+      <div class="card mb-3 border-0 bg-success" >
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <img src="assets/img/vector-1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-lg-6 my-auto">
+            <div class="card-body text-white px-lg-5">
+              <p class="fs-4 fs-lg-3 pe-lg-5 me-lg-5">
+                LebuStore isn't just another e-commerce platform! it is a portal to a world where all your dreams of the 
+
+              </p>
+              <h2 class="fs-3 fs-lg-1">
+                Biggest Deals <br />
+                Comes to Life!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Biggest deals End -->
+
+    <!-- Discount Start -->
+    <section class="container py-5">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card border-0 text-white">
+            <img src="assets/img/discount.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay d-flex align-items-center">
+              <div>
+                <p
+                  class="card-title fs-1 px-5"
+                  style="font-family: Bradley Hand ITC TT; line-height: 35px"
+                >
+                  Discount &<br />
+                  Coupons
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 text-white">
+            <img src="assets/img/Gift Card.png" class="card-img" alt="..." />
+            <div class="card-img-overlay d-flex align-items-center">
+              <div>
+                <p
+                  class="card-title fs-1 px-5"
+                  style="font-family: Bradley Hand ITC TT; line-height: 35px"
+                >
+                  Exclusive <br />
+                  Gifts
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discount End -->
+
+    <!-- Product Start -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col-xl-6">
+                <ul class="list-inline shop-top-menu pb-3 pt-1">
+                  <li class="list-inline-item me-4">
+                    <a class="h3 text-dark text-decoration-none" href="#"
+                      >Featured</a
+                    >
+                  </li>
+                  <li class="list-inline-item me-4">
+                    <a class="h3 text-dark text-decoration-none" href="#"
+                      >Latest Coupons</a
+                    >
+                  </li>
+                  <li class="list-inline-item me-4">
+                    <a class="h3 text-dark text-decoration-none" href="#"
+                      >Top Brands</a
+                    >
+                  </li>
+                  <li class="list-inline-item me-4">
+                    <a class="h3 text-dark text-decoration-none" href="#"
+                      >Popular</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="col-lg-6 pb-4">
+                <div class="d-flex">
+                  <select class="form-control">
+                    <option>Featured</option>
+                    <option>A to Z</option>
+                    <option>Item</option>
+                  </select>
+                </div>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/AArong.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img//brands/Bata.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/GRAND SULTAN.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/Lg.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/Radisson Dhaka.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/Meridien.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/WALTON.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="card mb-4 product-wap rounded-0 border-0">
+                  <div class="card rounded-0 border-0 border-0">
+                    <img
+                      class="card-img rounded-0 img-fluid bg-light"
+                      src="assets/img/brands/XIAOMI.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5>Oupidatat non</h5></a
+                    >
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </p>
+
+                    <div class="d-flex align-items-center gap-3">
+                      <del class="mb-0">$300.00</del>
+                      <p class="mb-0">$250.00</p>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <img
+                        src="assets/img/flag/ban-flag.png"
+                        style="height: 25px !important"
+                        alt=""
+                      />
+                      <p class="text-success fw-bold">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div div="row">
+              <ul class="pagination pagination-lg justify-content-end">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
+                    href="#"
+                    tabindex="-1"
+                    >1</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a
+                    class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                    href="#"
+                    >2</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a
+                    class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark"
+                    href="#"
+                    >3</a
+                  >
+                </li>
+              </ul>
+            </div> -->
+            <div class="text-center">
+              <button class="btn btn-outline-success border-success">
+                View All <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product End -->
+
+    <!-- Start Featured Product -->
+    <!-- <section class="bg-light">
+      <div class="container py-5">
+        <div class="row text-center py-3">
+          <div class="col-lg-6 m-auto">
+            <h1 class="h1">Featured Product</h1>
+            <p>
+              Reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="product-details.html">
+                <img
+                  src="./assets/img/feature_prod_01.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <ul class="list-unstyled d-flex justify-content-between">
+                  <li>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-muted fa fa-star"></i>
+                    <i class="text-muted fa fa-star"></i>
+                  </li>
+                  <li class="text-muted text-right">$240.00</li>
+                </ul>
+                <a
+                  href="product-details.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Gym Weight</a
+                >
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                  in culpa qui officia deserunt.
+                </p>
+                <p class="text-muted">Reviews (24)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="product-details.html">
+                <img
+                  src="./assets/img/feature_prod_02.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <ul class="list-unstyled d-flex justify-content-between">
+                  <li>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-muted fa fa-star"></i>
+                    <i class="text-muted fa fa-star"></i>
+                  </li>
+                  <li class="text-muted text-right">$480.00</li>
+                </ul>
+                <a
+                  href="product-details.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Cloud Nike Shoes</a
+                >
+                <p class="card-text">
+                  Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
+                  vitae pharetra sed, commodo ullamcorper.
+                </p>
+                <p class="text-muted">Reviews (48)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="product-details.html">
+                <img
+                  src="./assets/img/feature_prod_03.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <div class="card-body">
+                <ul class="list-unstyled d-flex justify-content-between">
+                  <li>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                    <i class="text-warning fa fa-star"></i>
+                  </li>
+                  <li class="text-muted text-right">$360.00</li>
+                </ul>
+                <a
+                  href="product-details.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Summer Addides Shoes</a
+                >
+                <p class="card-text">
+                  Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar
+                  sagittis diam, et scelerisque ipsum lobortis nec.
+                </p>
+                <p class="text-muted">Reviews (74)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End Featured Product -->
+
+    <!-- <section>
+      <div class="card text-white h-100 border-0">
+        <img src="assets/img/bg.png" class="card-img img-fluid" alt="..."  />
+        <div class="card-img-overlay row container">
+          <div class="col-12 col-lg-6 d-flex justify-content-center flex-column">
+            <p class="fs-4 fs-lg-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              laborum quo provident possimus, quam quibusdam veritatis, quasi
+              beatae accusamus cumque quaerat. Nostrum at accusantium quasi
+              porro consectetur voluptas sit odit.
+            </p>
+            <h2 class="fs-3 fs-lg-1">
+              Biggest Deals <br />
+              Comes to Life!
+            </h2>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Start Brands -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row text-center py-3">
+          <div class="col-lg-6 m-auto">
+            <p class="fs-2 fw-bold">
+              We've got <br />
+              <span style="color: orange">your favorite</span>
+              <span class="text-success">brands</span> <br />
+              all year round
+            </p>
+          </div>
+          <div class="col-lg-12 m-auto lebustore-carousel">
+            <div class="row d-flex flex-row">
+              <!--Controls-->
+              <div class="col-1 align-self-center">
+                <a
+                  class="h1"
+                  href="#multi-item-example"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <i class="text-light fas fa-chevron-left"></i>
+                </a>
+              </div>
+              <!--End Controls-->
+
+              <!--Carousel Wrapper-->
+              <div class="col bg-white ">
+                <div
+                  class="carousel slide carousel-multi-item py-3"
+                  id="multi-item-example"
+                  data-bs-ride="carousel"
+                >
+                  <!--Slides-->
+                  <div class="carousel-inner product-links-wap" role="listbox">
+                    <!--First slide-->
+                    <div class="carousel-item active">
+                      <div class="row align-items-center">
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/1.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/2.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/3.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/4.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/1.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/2.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/3.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/4.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/1.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/2.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/3.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                        <div class="col-3 p-md-5">
+                          <a href="#"
+                            ><img
+                              class="img-fluid brand-img"
+                              src="assets/img/client/4.png"
+                              alt="Brand Logo"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End Third slide-->
+                  </div>
+                  <!--End Slides-->
+                </div>
+              </div>
+              <!--End Carousel Wrapper-->
+
+              <!--Controls-->
+              <div class="col-1 align-self-center">
+                <a
+                  class="h1"
+                  href="#multi-item-example"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <i class="text-light fas fa-chevron-right"></i>
+                </a>
+              </div>
+              <!--End Controls-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Brands-->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" style="background-image: url(assets/img/footer-bg.jpg); background-size: 100% 100%;" id="lebustore_footer">
+      <div class="py-5">
+        <div class="container p-5" style="background-color: rgba(0, 0, 0, 0.555);">
+          <div class="row text-light mb-4">
+            
+            <div class="col-auto me-auto">
+              <h2>Subscribe for the best deals!</h2>
+              <p>Step into the world of online discount with us.</p>
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="subscribeEmail">Email address</label>
+              <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control bg-dark border-light"
+                  id="subscribeEmail"
+                  placeholder="Email address"
+                />
+                <div class="input-group-text btn-success text-light">
+                  Subscribe
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <a
+                href="index.html"
+                class="text-success border-bottom pb-3 border-light logo"
+              >
+                <img src="assets/img/LebuStore.png" alt="" />
+              </a>
+              <p class="text-white py-3">LebuStore isn't just another e-commerce platform! it is a portal to a world where all your dreams of the 
+              </p>
+              <!-- <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw"></i>
+                  <a class="text-decoration-none" href="tel:010-020-0340"
+                    >010-020-0340</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <a class="text-decoration-none" href="mailto:info@company.com"
+                    >info@company.com</a
+                  >
+                </li>
+              </ul> -->
+              <p class="text-left text-light pt-4">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
+              </p>
+            </div>
+  
+            <div class="col-md-6 col-lg-3">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">
+                Products
+              </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li><a class="text-decoration-none" href="#">Electronics</a></li>
+                <li><a class="text-decoration-none" href="#">Fashion</a></li>
+                <li><a class="text-decoration-none" href="#">FMCG</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Groceries</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-6 col-lg-3">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">
+                Further Info
+              </h2>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li><a class="text-decoration-none" href="#">Home</a></li>
+                <li><a class="text-decoration-none" href="#">About Us</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Shop Locations</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">FAQs</a></li>
+                <li><a class="text-decoration-none" href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h2 class="h2 text-light border-bottom pb-3 border-light">
+                Social Link
+              </h2>
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fab fa-twitter fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fab fa-twitter fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center"
+                >
+                  <a
+                    class="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-auto">
+              <label class="sr-only" for="subscribeEmail">Email address</label>
+              <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control bg-dark border-light"
+                  id="subscribeEmail"
+                  placeholder="Email address"
+                />
+                <div class="input-group-text btn-success text-light">
+                  Subscribe
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- <div class="w-100 bg-black py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lebustore.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+  </body>
+</html>
