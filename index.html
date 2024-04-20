@@ -489,16 +489,21 @@
 
     <!-- Biggest deals Start -->
     <section>
-      <div class="card mb-3 border-0 bg-success" >
+      <div class="card mb-3 border-0 bg-success">
         <div class="row g-0">
-          <div class="col-lg-6">
-            <img src="assets/img/vector-1.png" class="img-fluid rounded-start" alt="...">
+          <div class="col-md-6">
+            <img
+              src="assets/img/vector-1.png"
+              style="min-height: 70vh"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
           </div>
-          <div class="col-lg-6 my-auto">
+          <div class="col-md-6 my-auto">
             <div class="card-body text-white px-lg-5">
               <p class="fs-4 fs-lg-3 pe-lg-5 me-lg-5">
-                LebuStore isn't just another e-commerce platform! it is a portal to a world where all your dreams of the 
-
+                LebuStore isn't just another e-commerce platform! it is a portal
+                to a world where all your dreams of the
               </p>
               <h2 class="fs-3 fs-lg-1">
                 Biggest Deals <br />
@@ -508,7 +513,6 @@
           </div>
         </div>
       </div>
-      
     </section>
     <!-- Biggest deals End -->
 
@@ -1259,11 +1263,16 @@
     </section> -->
     <!-- End Featured Product -->
 
-    <!-- <section>
-      <div class="card text-white h-100 border-0">
-        <img src="assets/img/bg.png" class="card-img img-fluid" alt="..."  />
-        <div class="card-img-overlay row container">
-          <div class="col-12 col-lg-6 d-flex justify-content-center flex-column">
+    <section>
+      <div
+        class="card text-white h-100 border-0 offer-section"
+        style="background-image: url(assets/img/bg.png)"
+      >
+        <!-- <img src="assets/img/bg.png" class="card-img img-fluid" alt="..."  /> -->
+        <div class="card-img-overlay row container mx-auto">
+          <div
+            class="col-12 col-md-8 col-lg-6 d-flex justify-content-center flex-column px-0"
+          >
             <p class="fs-4 fs-lg-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
               laborum quo provident possimus, quam quibusdam veritatis, quasi
@@ -1278,7 +1287,7 @@
           <div class="col"></div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- Start Brands -->
     <section class="bg-light py-5">
@@ -1308,7 +1317,7 @@
               <!--End Controls-->
 
               <!--Carousel Wrapper-->
-              <div class="col bg-white ">
+              <div class="col bg-white">
                 <div
                   class="carousel slide carousel-multi-item py-3"
                   id="multi-item-example"
@@ -1457,12 +1466,96 @@
     </section>
     <!--End Brands-->
 
-    <!-- Start Footer -->
-    <footer class="bg-dark" style="background-image: url(assets/img/footer-bg.jpg); background-size: 100% 100%;" id="lebustore_footer">
-      <div class="py-5">
-        <div class="container p-5" style="background-color: rgba(0, 0, 0, 0.555);">
-          <div class="row text-light mb-4">
+    <!-- Partners Start -->
+    <section class="position-relative">
+      <div class="container">
+        <div class="row pt-3">
+          <div
+            class="col d-flex justify-content-between py-2 align-items-center"
+          >
+            <h2 class="text-success">
+              <!-- <span style="color: orange">Brows</span>  -->
+              Categories
+            </h2>
+            <h6 class="text-uppercase">
+              About Us <i class="fa fa-arrow-right text-success"></i>
+            </h6>
+          </div>
+          <hr />
+          <p class="fs-4">
+            Our story is co-authored by our trusted partners, who share our
+            vision of creating a world of savings.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 container mx-auto">
+          <div class="col">
+            <article class="card border-0">
+              <img
+                class="card-img-top img-responsive"
+                src="assets/img/partners/p1.png"
+                alt="Deer in nature"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Kazi Monirul Kabir</h4>
+                <h6 class="text-muted">CEO</h6>
+              </div>
+            </article>
             
+          </div>
+          <div class="col">
+            <article class="card border-0">
+              <img
+                class="card-img-top img-responsive"
+                src="assets/img/partners/p2.png"
+                alt="Deer in nature"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Kazi Monirul Kabir</h4>
+                <h6 class="text-muted">CEO</h6>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card border-0">
+              <img
+                class="card-img-top img-responsive"
+                src="assets/img/partners/p3.png"
+                alt="Deer in nature"
+              />
+              <div class="card-block">
+                <h4 class="card-title">Kazi Monirul Kabir</h4>
+                <h6 class="text-muted">CEO</h6>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Partners End -->
+
+    <section class="position-relative d-none d-md-block">
+      <div class="vector-bg ">
+        <img src="assets/img/partners/partner-bg.png" class="img-fluid" alt="">
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer
+      class="bg-dark"
+      style="
+        background-image: url(assets/img/footer-bg.jpg);
+        background-size: cover;
+        background-position: center;
+      "
+      id="lebustore_footer"
+    >
+      <div class="py-5">
+        <div
+          class="container p-5"
+          style="background-color: rgba(0, 0, 0, 0.555)"
+        >
+          <div class="row text-light mb-4">
             <div class="col-auto me-auto">
               <h2>Subscribe for the best deals!</h2>
               <p>Step into the world of online discount with us.</p>
@@ -1494,7 +1587,9 @@
               >
                 <img src="assets/img/LebuStore.png" alt="" />
               </a>
-              <p class="text-white py-3">LebuStore isn't just another e-commerce platform! it is a portal to a world where all your dreams of the 
+              <p class="text-white py-3">
+                LebuStore isn't just another e-commerce platform! it is a portal
+                to a world where all your dreams of the
               </p>
               <!-- <ul class="list-unstyled text-light footer-link-list">
                 <li>
@@ -1519,22 +1614,26 @@
                 <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
               </p>
             </div>
-  
+
             <div class="col-md-6 col-lg-3">
               <h2 class="h2 text-light border-bottom pb-3 border-light">
                 Products
               </h2>
               <ul class="list-unstyled text-light footer-link-list">
-                <li><a class="text-decoration-none" href="#">Electronics</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Electronics</a>
+                </li>
                 <li><a class="text-decoration-none" href="#">Fashion</a></li>
                 <li><a class="text-decoration-none" href="#">FMCG</a></li>
                 <li>
                   <a class="text-decoration-none" href="#">Groceries</a>
                 </li>
-                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Sport Shoes</a>
+                </li>
               </ul>
             </div>
-  
+
             <div class="col-md-6 col-lg-3">
               <h2 class="h2 text-light border-bottom pb-3 border-light">
                 Further Info
@@ -1597,7 +1696,7 @@
               </ul>
             </div>
           </div>
-  
+
           <!-- <div class="row text-light mb-4">
             <div class="col-12 mb-3">
               <div class="w-100 my-3 border-top border-light"></div>
