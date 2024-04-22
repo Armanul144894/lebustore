@@ -149,6 +149,16 @@ Custom Css
   
 }
 
+.coupon-num{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+}
+
 @media screen and (min-width: 1440px) {
   .card-block{
     z-index: 999;
