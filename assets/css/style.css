@@ -161,8 +161,8 @@ div {
 }
 /* Brand */
 .brand-img {
-  filter: grayscale(100%);
-  opacity: 0.5;
+  /* filter: grayscale(100%);
+  opacity: 0.5; */
   transition: 0.5s;
 }
 .brand-img:hover {
@@ -253,17 +253,17 @@ div {
 }
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   #lebustore_main_nav .navbar-nav {
     max-width: 450px;
   }
-}
+} */
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  #lebustore_main_nav .navbar-nav {
+  /* #lebustore_main_nav .navbar-nav {
     max-width: 550px;
-  }
+  } */
   #Lebustore-hero-carousel .carousel-item {
     min-height: 30rem !important;
   }

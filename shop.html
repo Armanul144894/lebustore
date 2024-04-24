@@ -98,11 +98,15 @@
         </button>
 
         <div
-          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-center"
           id="lebustore_main_nav"
         >
-          <div class="flex-fill">
-            <ul class="nav navbar-nav d-flex gap-4 mx-lg-auto">
+          <div
+            class="flex-fill d-flex align-items-center justify-content-lg-end"
+          >
+            <ul
+              class="nav navbar-nav d-flex gap-lg-2 gap-xl-4 mx-lg-auto align-items-lg-center"
+            >
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -110,19 +114,30 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="shop.html">Shop</a>
+                <a class="nav-link" href="shop.html">Discounts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product-details.html"
-                  >Product Details</a
-                >
+                <a class="nav-link" href="shop.html">Coupons</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="product-details.html">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <div class="btn btn-outline-success">
+                    Login <i class="fa fa-unlock ps-2"></i>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
-          <div class="navbar align-self-center d-flex">
+          <!-- <div class="navbar align-self-center d-flex">
             <div
               class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
             >
@@ -160,7 +175,7 @@
                 >+99</span
               >
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -211,63 +226,76 @@
     <!-- Banner Start  -->
     <section class="">
       <div class="card bg-dark text-white border-0">
-        <img src="assets/img/banner-bg-2.png" class="card-img img-fluid" style="min-height: 50vh; height: 100%;" alt="..." />
+        <img
+          src="assets/img/banner/discount-banner-bg.png"
+          class="card-img img-fluid"
+          style="min-height: 50vh; height: 100%"
+          alt="..."
+        />
         <div
           class="card-img-overlay d-flex justify-content-center align-items-center"
         >
           <div class="text-center py-5">
-            <h1 class="card-title fs-md-1 fs-4">
-              Search Best Coupon Deals
-            </h1>
-            <div
-              style="background-color: rgba(0, 0, 0, 0.801)"
-              class="px-4 py-1 rounded-pill mt-md-5"
-            >
-              <div class="row align-items-center">
-                <div class="select-section border-end col-4 border-light">
-                  <div class="select w-100">
-                    <span class="select__flag"></span>
-                    <select
-                      class="select__input"
-                      name="country-selector"
-                      id="country-selector"
-                    >
-                      <!-- <option value="0">Select Country</option> -->
-                      <option value="IT">Italy</option>
-                      <option value="PT">Portugal</option>
-                      <option value="ES">Spain</option>
-                    </select>
+            <div class="row">
+              <div class="col-12 w-100">
+                <h1 class="card-title fs-md-1 fs-2">
+                  Search Best Coupon Deals
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 w-100">
+                <div
+                  style="background-color: rgba(0, 0, 0, 0.801)"
+                  class="px-4 py-1 rounded-pill mt-md-5"
+                >
+                  <div class="row align-items-center">
+                    <div class="select-section border-end col-4 border-light">
+                      <div class="select w-100">
+                        <span class="select__flag"></span>
+                        <select
+                          class="select__input"
+                          name="country-selector"
+                          id="country-selector"
+                        >
+                          <!-- <option value="0">Select Country</option> -->
+                          <option value="IT">Italy</option>
+                          <option value="PT">Portugal</option>
+                          <option value="ES">Spain</option>
+                        </select>
 
-                    <svg class="select__arrow" viewBox="0 0 16 16">
-                      <polyline
-                        points="3.5,6.5 8,11 12.5,6.5"
-                        stroke-width="2"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="col-8">
-                  <div class="w-100">
-                    <div
-                      class="d-flex align-items-center justify-content-between gap-3"
-                    >
-                      <div class="input-group-prepend w-100">
-                        <span class="d-flex gap-2 align-items-center">
-                          <i class="fas fa-search"></i>
-                          <input
-                            type="text"
-                            class="form-control border-0 search-field"
-                            placeholder="Search Discounts & Coupons "
-                          />
-                        </span>
+                        <svg class="select__arrow" viewBox="0 0 16 16">
+                          <polyline
+                            points="3.5,6.5 8,11 12.5,6.5"
+                            stroke-width="2"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></polyline>
+                        </svg>
                       </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="w-100">
+                        <div
+                          class="d-flex align-items-center justify-content-between gap-3"
+                        >
+                          <div class="input-group-prepend w-100">
+                            <span class="d-flex gap-2 align-items-center">
+                              <i class="fas fa-search"></i>
+                              <input
+                                type="text"
+                                class="form-control border-0 search-field"
+                                placeholder="Search Discounts & Coupons "
+                              />
+                            </span>
+                          </div>
 
-                      <div class="input-group-append">
-                        <i class="fas fa-arrow-right text-warning"></i>
+                          <div class="input-group-append">
+                            <i class="fas fa-arrow-right text-warning"></i>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -287,7 +315,10 @@
           <!-- Product Start -->
 
           <div class="col-lg-9">
-            <h2 class="text-success border-bottom pb-2">Categories</h2>
+            <h2 class="text-success border-bottom pb-2">
+              <span style="color: orange">Discounts &</span> 
+              Coupons
+            </h2>
             <div class="row">
               <div class="col-xl-8">
                 <ul class="list-inline shop-top-menu pb-3 pt-1">
@@ -371,19 +402,15 @@
                       Molestiae ad veniam libero, ab distinctio
                     </p>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
-                    </div>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0">$300.00</del>
+                        <p class="mb-0">$250.00</p>
+                      </div>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -435,19 +462,15 @@
                       Molestiae ad veniam libero, ab distinctio
                     </p>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
-                    </div>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0">$300.00</del>
+                        <p class="mb-0">$250.00</p>
+                      </div>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -506,12 +529,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -570,12 +589,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -634,12 +649,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -698,12 +709,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -762,12 +769,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -826,12 +829,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -890,12 +889,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -954,12 +949,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -1018,12 +1009,8 @@
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <img
-                        src="assets/img/flag/ban-flag.png"
-                        style="height: 25px !important"
-                        alt=""
-                      />
-                      <p class="text-success fw-bold">Coupon Code</p>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
                   </div>
                 </div>
@@ -1064,6 +1051,31 @@
 
           <div class="col-lg-3">
             <h1 class="h2 pb-2 border-bottom">Filter</h1>
+            <div class="mb-3">
+              <h4 class="mb-2">Discount Range</h4>
+              <div class="d-flex justify-content-between align-items-center" >
+                <output
+                  id="amount"
+                  name="amount"
+                  min-velue="0"
+                  max-value="100"
+                  for="rangeInput"
+                  >0</output
+                >
+                <output class="text-success fw-bold">100</output>
+              </div>
+              <input
+              
+                type="range"
+                class="form-range w-100"
+                id="rangeInput"
+                name="rangeInput"
+                min="0"
+                max="100"
+                value="0"
+                oninput="amount.value=rangeInput.value"
+              />
+            </div>
             <ul class="list-unstyled lebustore-accordion">
               <li class="pb-3">
                 <a
@@ -1191,58 +1203,58 @@
               <div class="card-body">
                 <h5 class="text-center fs-4">Coupon Brands</h5>
                 <ul class="list-unstyled pt-3">
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Bata</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Bata.png" alt=""></a
                       >
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Yellow</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Walton.png" alt=""></a
                       >
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Lotto</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Radission.png" alt=""></a
                       >
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Apex</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Agora.png" alt=""></a
                       >
                       <span class="coupon-num rounded">5</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Walton</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Samsung.png" alt=""></a
                       >
                       <span class="coupon-num rounded">2</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Aarong</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Meridian.png" alt=""></a
                       >
                       <span class="coupon-num rounded">8</span>
                     </div>
                   </li>
-                  <li>
+                  <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        >Sultan</a
+                        ><img class="img-fluid w-50" src="assets/img/partners/Sara.png" alt=""></a
                       >
                       <span class="coupon-num rounded">5</span>
                     </div>
@@ -1279,7 +1291,9 @@
               <p>Step into the world of online discount with us.</p>
             </div>
             <div class="col-12 col-lg-6">
-              <label class="sr-only" for="subscribeEmail text-white">Email address</label>
+              <label class="sr-only" for="subscribeEmail text-white"
+                >Email address</label
+              >
               <div class="input-group mb-2">
                 <input
                   type="text"
