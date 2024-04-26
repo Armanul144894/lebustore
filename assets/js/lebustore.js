@@ -18,6 +18,9 @@ $(document).ready(function() {
             all_panels.removeClass('active').slideUp();
             target.addClass('active').slideDown();
         }
+        else{
+          target.removeClass('active').slideUp()
+        }
       return false;
     });
     // End accordion
