@@ -76,106 +76,60 @@
     <!-- Close Top Nav -->
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow header-section">
-      <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar header-section navbar-expand-lg navbar-light">
+      <div class="container d-flex align-items-center">
         <a
           class="navbar-brand text-success logo h1 align-self-center"
-          href="index.html"
+          href="shop.html"
         >
           <img src="assets/img/LebuStore.png" alt="" />
         </a>
-
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#lebustore_main_nav"
-          aria-controls="navbarSupportedContent"
+          data-toggle="collapse"
+          data-target="#lebustore_main_nav"
+          aria-controls="lebustore_main_nav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
-        <div
-          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-center"
-          id="lebustore_main_nav"
-        >
-          <div
-            class="flex-fill d-flex align-items-center justify-content-lg-end"
+        <div class="collapse navbar-collapse" id="lebustore_main_nav">
+          <ul
+            class="navbar-nav mr-auto w-100 justify-content-end align-items-lg-center gap-md-0 gap-xl-4 text-uppercase"
           >
-            <ul
-              class="nav navbar-nav d-flex gap-lg-2 gap-xl-4 mx-lg-auto align-items-lg-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Discounts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Coupons</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product-details.html">Offers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <div class="btn btn-outline-success">
-                    Login <i class="fa fa-unlock ps-2"></i>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- <div class="navbar align-self-center d-flex">
-            <div
-              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
-            >
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputMobileSearch"
-                  placeholder="Search ..."
-                />
-                <div class="input-group-text">
-                  <i class="fa fa-fw fa-search"></i>
-                </div>
-              </div>
-            </div>
-            <a
-              class="nav-icon d-none d-lg-inline"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#lebustore_search"
-            >
-              <i class="fa fa-fw fa-search text-dark mr-2"></i>
-            </a>
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-              <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-              <span
-                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
-                >7</span
+            <li class="nav-item active">
+              <a class="nav-link" href="shop.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Discounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Coupons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product-details.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-success rounded-pill px-3 bg-white"
+                href=""
               >
-            </a>
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-              <i class="fa fa-fw fa-user text-dark mr-3"></i>
-              <span
-                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
-                >+99</span
-              >
-            </a>
-          </div> -->
+                Login <i class="fa fa-unlock ps-2"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -233,69 +187,60 @@
           alt="..."
         />
         <div
-          class="card-img-overlay d-flex justify-content-center align-items-center"
+          class="card-img-overlay d-flex justify-content-center align-items-center container"
         >
           <div class="text-center py-5">
-            <div class="row">
-              <div class="col-12 w-100">
-                <h1 class="card-title fs-md-1 fs-2">
-                  Search Best Coupon Deals
-                </h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 w-100">
-                <div
-                  style="background-color: rgba(0, 0, 0, 0.801)"
-                  class="px-4 py-1 rounded-pill mt-md-5"
-                >
-                  <div class="row align-items-center">
-                    <div class="select-section border-end col-4 border-light">
-                      <div class="select w-100">
-                        <span class="select__flag"></span>
-                        <select
-                          class="select__input"
-                          name="country-selector"
-                          id="country-selector"
-                        >
-                          <!-- <option value="0">Select Country</option> -->
-                          <option value="IT">Italy</option>
-                          <option value="PT">Portugal</option>
-                          <option value="ES">Spain</option>
-                        </select>
+            <h1 class="card-title h1">Search Best Coupon Deals</h1>
 
-                        <svg class="select__arrow" viewBox="0 0 16 16">
-                          <polyline
-                            points="3.5,6.5 8,11 12.5,6.5"
-                            stroke-width="2"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></polyline>
-                        </svg>
+            <div
+              style="background-color: rgba(0, 0, 0, 0.555)"
+              class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+            >
+              <div class="row align-items-center">
+                <div class="select-section border-end col-4 border-light">
+                  <div class="select">
+                    <span class="select__flag"></span>
+                    <select
+                      class="select__input"
+                      name="country-selector"
+                      id="country-selector"
+                    >
+                      <!-- <option value="0">Select Country</option> -->
+                      <option value="IT">Italy</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Spain</option>
+                    </select>
+
+                    <svg class="select__arrow" viewBox="0 0 16 16">
+                      <polyline
+                        points="3.5,6.5 8,11 12.5,6.5"
+                        stroke-width="2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <div class="input-group-prepend w-100">
+                        <span class="d-flex gap-2 align-items-center">
+                          <i class="fas fa-search"></i>
+                          <input
+                            type="text"
+                            class="form-control border-0 search-field"
+                            placeholder="Search Discounts & Coupons "
+                          />
+                        </span>
                       </div>
-                    </div>
-                    <div class="col-8">
-                      <div class="w-100">
-                        <div
-                          class="d-flex align-items-center justify-content-between gap-3"
-                        >
-                          <div class="input-group-prepend w-100">
-                            <span class="d-flex gap-2 align-items-center">
-                              <i class="fas fa-search"></i>
-                              <input
-                                type="text"
-                                class="form-control border-0 search-field"
-                                placeholder="Search Discounts & Coupons "
-                              />
-                            </span>
-                          </div>
 
-                          <div class="input-group-append">
-                            <i class="fas fa-arrow-right text-warning"></i>
-                          </div>
-                        </div>
+                      <div class="input-group-append">
+                        <i class="fas fa-arrow-right text-warning"></i>
                       </div>
                     </div>
                   </div>
@@ -306,6 +251,7 @@
         </div>
       </div>
     </section>
+
     <!-- Banner End  -->
 
     <!-- Start Content -->
@@ -316,29 +262,37 @@
 
           <div class="col-lg-9">
             <h2 class="text-success border-bottom pb-2">
-              <span style="color: orange">Discounts &</span> 
+              <span style="color: orange">Discounts &</span>
               Coupons
             </h2>
             <div class="row">
               <div class="col-xl-8">
-                <ul class="list-inline shop-top-menu pb-3 pt-1">
-                  <li class="list-inline-item me-4">
-                    <a class="h3 text-dark text-decoration-none" href="#"
+                <ul class="list-inline shop-top-menu py-4">
+                  <li class="list-inline-item me-lg-5">
+                    <a
+                      class="text-uppercase text-dark text-decoration-none active"
+                      href="#"
                       >Featured</a
                     >
                   </li>
-                  <li class="list-inline-item me-4">
-                    <a class="h3 text-dark text-decoration-none" href="#"
+                  <li class="list-inline-item me-lg-5">
+                    <a
+                      class="text-uppercase text-dark text-decoration-none"
+                      href="#"
                       >Latest Coupons</a
                     >
                   </li>
-                  <li class="list-inline-item me-4">
-                    <a class="h3 text-dark text-decoration-none" href="#"
+                  <li class="list-inline-item me-lg-5">
+                    <a
+                      class="text-uppercase text-dark text-decoration-none"
+                      href="#"
                       >Top Brands</a
                     >
                   </li>
-                  <li class="list-inline-item me-4">
-                    <a class="h3 text-dark text-decoration-none" href="#"
+                  <li class="list-inline-item me-lg-5">
+                    <a
+                      class="text-uppercase text-dark text-decoration-none"
+                      href="#"
                       >Popular</a
                     >
                   </li>
@@ -354,16 +308,16 @@
                   </div>
                 </div> -->
             </div>
-            <div class="row">
+            <div class="row product-section">
               <div class="col-md-6">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img img-fluid"
                       src="assets/img/brands/Group 1.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -395,20 +349,20 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <div class="d-flex align-items-center gap-3">
-                        <del class="mb-0">$300.00</del>
-                        <p class="mb-0">$250.00</p>
-                      </div>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
+                    </div>
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
@@ -416,14 +370,14 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Lotto.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -455,20 +409,20 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <div class="d-flex align-items-center gap-3">
-                        <del class="mb-0">$300.00</del>
-                        <p class="mb-0">$250.00</p>
-                      </div>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
+                    </div>
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
                     </div>
@@ -476,14 +430,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Yellow Bangladesh.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -515,19 +469,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -536,14 +490,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/AArong.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -575,19 +529,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -596,14 +550,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Bata.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -635,19 +589,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -656,14 +610,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/GRAND SULTAN.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -695,19 +649,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -716,14 +670,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Meridien.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -755,19 +709,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -776,14 +730,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Radisson Dhaka.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -815,19 +769,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -836,14 +790,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/WALTON.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -875,19 +829,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -896,14 +850,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0 border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/XIAOMI.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -935,19 +889,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -956,14 +910,14 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Lg.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -995,19 +949,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -1020,7 +974,7 @@
                 <ul class="pagination pagination-lg justify-content-end">
                   <li class="page-item disabled">
                     <a
-                      class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
+                      class="page-link active rounded mr-3 shadow-sm border-top-0 border-left-0"
                       href="#"
                       tabindex="-1"
                       >1</a
@@ -1028,14 +982,14 @@
                   </li>
                   <li class="page-item">
                     <a
-                      class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                      class="page-link rounded mr-3 shadow-sm border-top-0 border-left-0 text-dark"
                       href="#"
                       >2</a
                     >
                   </li>
                   <li class="page-item">
                     <a
-                      class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark"
+                      class="page-link rounded shadow-sm border-top-0 border-left-0 text-dark"
                       href="#"
                       >3</a
                     >
@@ -1043,17 +997,21 @@
                 </ul>
               </div> -->
             <div class="text-center">
-              <button class="btn btn-outline-success border-success">
-                View All <i class="fa fa-arrow-right"></i>
+              <button
+                class="btn btn-outline-success border-success text-success bg-light"
+              >
+                View All <i class="fa fa-arrow-right ps-2"></i>
               </button>
             </div>
           </div>
 
           <div class="col-lg-3">
             <h1 class="h2 pb-2 border-bottom">Filter</h1>
-            <div class="mb-3">
+            <div class="mb-3 pt-4">
               <h4 class="mb-2">Discount Range</h4>
-              <div class="d-flex justify-content-between align-items-center" >
+              <div
+                class="d-flex justify-content-between align-items-center discount-range"
+              >
                 <output
                   id="amount"
                   name="amount"
@@ -1065,25 +1023,24 @@
                 <output class="text-success fw-bold">100</output>
               </div>
               <input
-              
                 type="range"
-                class="form-range w-100"
                 id="rangeInput"
                 name="rangeInput"
                 min="0"
                 max="100"
                 value="0"
                 oninput="amount.value=rangeInput.value"
+                class="form-range w-100"
               />
             </div>
             <ul class="list-unstyled lebustore-accordion">
               <li class="pb-3">
                 <a
-                  class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
                   href="#"
                 >
                   Categories
-                  <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
                 </a>
                 <ul class="collapse show list-unstyled pl-3">
                   <li><a class="text-decoration-none" href="#">Men</a></li>
@@ -1092,13 +1049,11 @@
               </li>
               <li class="pb-3">
                 <a
-                  class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
                   href="#"
                 >
                   Brands
-                  <i
-                    class="pull-right fa fa-fw fa-chevron-circle-down mt-1"
-                  ></i>
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
                 </a>
                 <ul id="collapseTwo" class="collapse list-unstyled pl-3">
                   <li><a class="text-decoration-none" href="#">Sport</a></li>
@@ -1107,13 +1062,11 @@
               </li>
               <li class="pb-3">
                 <a
-                  class="collapsed d-flex justify-content-between h3 text-decoration-none"
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
                   href="#"
                 >
                   Countries
-                  <i
-                    class="pull-right fa fa-fw fa-chevron-circle-down mt-1"
-                  ></i>
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
                 </a>
                 <ul id="collapseThree" class="collapse list-unstyled pl-3">
                   <li>
@@ -1206,56 +1159,77 @@
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Bata.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Bata.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Walton.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Walton.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Radission.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Radission.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">3</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Agora.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Agora.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">5</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Samsung.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Samsung.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">2</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Meridian.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Meridian.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">8</span>
                     </div>
                   </li>
                   <li class="py-2">
                     <div class="d-flex justify-content-between pb-2">
                       <a class="text-decoration-none h3 text-dark" href="#"
-                        ><img class="img-fluid w-50" src="assets/img/partners/Sara.png" alt=""></a
-                      >
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Sara.png"
+                          alt=""
+                      /></a>
                       <span class="coupon-num rounded">5</span>
                     </div>
                   </li>
@@ -1269,6 +1243,94 @@
       </div>
     </section>
     <!-- End Content -->
+
+    <!-- Partners Start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row pt-3">
+          <div
+            class="col d-flex justify-content-between py-2 align-items-center"
+          >
+            <h2 class="text-success">
+              <span style="color: orange">Trusted</span>
+              Partners
+            </h2>
+            <a
+              href="about.html"
+              class="text-uppercase text-decoration-none text-dark"
+            >
+              About Us <i class="fa fa-arrow-right text-success ps-2"></i>
+            </a>
+          </div>
+          <hr />
+          <p class="fs-5">
+            Our story is co-authored by our trusted partners, who share our
+            vision of creating a world of savings.
+          </p>
+        </div>
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 container mx-auto align-items-center g-5"
+        >
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Aarong.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Agora.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Bata.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Ecstasy.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Evercare.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/G & G.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Grameenphone.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Hatil.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/LG.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Meridian.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Robi.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Sara.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners End -->
 
     <!-- Start Footer -->
     <footer
@@ -1285,7 +1347,7 @@
           class="container p-5"
           style="background-color: rgba(0, 0, 0, 0.85)"
         >
-          <div class="row text-light mb-4">
+          <div class="row text-light mb-4 align-items-center">
             <div class="col-12 col-lg-6 me-auto">
               <h2>Subscribe for the best deals!</h2>
               <p>Step into the world of online discount with us.</p>
@@ -1294,14 +1356,16 @@
               <label class="sr-only" for="subscribeEmail text-white"
                 >Email address</label
               >
-              <div class="input-group mb-2">
+              <div class="input-group mb-2 position-relative">
                 <input
                   type="text"
-                  class="form-control bg-dark border-light text-white"
+                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
                   id="subscribeEmail"
                   placeholder="Email address"
                 />
-                <div class="input-group-text btn-success text-white fw-bold">
+                <div
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                >
                   Subscribe
                 </div>
               </div>
@@ -1311,15 +1375,12 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6 col-lg-3">
-              <a
-                href="index.html"
-                class="text-success border-bottom pb-3 border-light logo"
-              >
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
+            <div class="col">
+              <a href="index.html" class="text-success pb-3 border-light logo">
                 <img src="assets/img/LebuStore.png" alt="" />
               </a>
-              <p class="text-white py-3">
+              <p class="text-white py-3 footer-info">
                 LebuStore isn't just another e-commerce platform! it is a portal
                 to a world where all your dreams of the
               </p>
@@ -1347,10 +1408,43 @@
               </p>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Products
-              </h2>
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Important Links
+              </h3>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="product-details.html"
+                    >Offers</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Partners</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="contact.html"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Categories
+              </h3>
               <ul class="list-unstyled text-light footer-link-list">
                 <li>
                   <a class="text-decoration-none" href="#">Electronics</a>
@@ -1361,29 +1455,20 @@
                   <a class="text-decoration-none" href="#">Groceries</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="#">Sport Shoes</a>
+                  <a class="text-decoration-none" href="#">Shoes</a>
                 </li>
-              </ul>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Further Info
-              </h2>
-              <ul class="list-unstyled text-light footer-link-list">
-                <li><a class="text-decoration-none" href="#">Home</a></li>
-                <li><a class="text-decoration-none" href="#">About Us</a></li>
                 <li>
-                  <a class="text-decoration-none" href="#">Shop Locations</a>
+                  <a class="text-decoration-none" href="#">Beauty</a>
                 </li>
-                <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                <li><a class="text-decoration-none" href="#">Contact</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Resort</a>
+                </li>
               </ul>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Social Link
-              </h2>
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Follow Us
+              </h3>
               <ul class="list-inline text-left footer-icons">
                 <li
                   class="list-inline-item border border-light rounded-circle text-center bg-warning"

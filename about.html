@@ -76,103 +76,57 @@
     <!-- Close Top Nav -->
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow header-section">
-      <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar header-section navbar-expand-lg navbar-light">
+      <div class="container d-flex align-items-center">
         <a
           class="navbar-brand text-success logo h1 align-self-center"
-          href="index.html"
+          href="shop.html"
         >
           <img src="assets/img/LebuStore.png" alt="" />
         </a>
-
         <button
-          class="navbar-toggler border-0"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#lebustore_main_nav"
-          aria-controls="navbarSupportedContent"
+          data-toggle="collapse"
+          data-target="#lebustore_main_nav"
+          aria-controls="lebustore_main_nav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
-        <div
-          class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-center"
-          id="lebustore_main_nav"
-        >
-          <div class="flex-fill d-flex align-items-center justify-content-lg-end">
-            <ul class="nav navbar-nav d-flex gap-lg-2 gap-xl-4 mx-lg-auto align-items-lg-center">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Discounts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html">Coupons</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product-details.html"
-                  >Offers</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <div class="btn btn-outline-success">Login <i class="fa fa-unlock ps-2"></i></div>
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-          <!-- <div class="navbar align-self-center d-flex">
-            <div
-              class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3"
-            >
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputMobileSearch"
-                  placeholder="Search ..."
-                />
-                <div class="input-group-text">
-                  <i class="fa fa-fw fa-search"></i>
-                </div>
-              </div>
-            </div>
-            <a
-              class="nav-icon d-none d-lg-inline"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#lebustore_search"
-            >
-              <i class="fa fa-fw fa-search text-dark mr-2"></i>
-            </a>
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-              <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-              <span
-                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
-                >7</span
-              >
-            </a>
-            <a class="nav-icon position-relative text-decoration-none" href="#">
-              <i class="fa fa-fw fa-user text-dark mr-3"></i>
-              <span
-                class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"
-                >+99</span
-              >
-            </a>
-          </div> -->
+        <div class="collapse navbar-collapse" id="lebustore_main_nav">
+          <ul
+            class="navbar-nav mr-auto w-100 justify-content-end align-items-lg-center gap-md-0 gap-xl-4 text-uppercase"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="shop.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Discounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Coupons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product-details.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-success rounded-pill px-3 bg-white" href="">
+                Login <i class="fa fa-unlock ps-2"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -293,22 +247,23 @@
 
     <!-- Start Brands -->
     <section class="bg-light py-5">
-      <div class="container my-4">
+      <div class="container">
         <div class="row text-center py-3">
           <div class="col-lg-6 m-auto">
-            <h1 class="h1">Our Brands</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod Lorem ipsum dolor sit amet.
+            <p class="fs-2 fw-bold">
+              We've got <br />
+              <span style="color: orange">your favorite</span>
+              <span class="text-success">brands</span> <br />
+              all year round
             </p>
           </div>
-          <div class="col-lg-9 m-auto lebustore-carousel">
+          <div class="col-lg-12 m-auto lebustore-carousel">
             <div class="row d-flex flex-row">
               <!--Controls-->
               <div class="col-1 align-self-center">
                 <a
                   class="h1"
-                  href="#lebustore-slide-brand"
+                  href="#multi-item-example"
                   role="button"
                   data-bs-slide="prev"
                 >
@@ -318,22 +273,22 @@
               <!--End Controls-->
 
               <!--Carousel Wrapper-->
-              <div class="col">
+              <div class="col bg-white">
                 <div
-                  class="carousel slide carousel-multi-item pt-2 pt-md-0"
-                  id="lebustore-slide-brand"
+                  class="carousel slide carousel-multi-item py-3"
+                  id="multi-item-example"
                   data-bs-ride="carousel"
                 >
                   <!--Slides-->
                   <div class="carousel-inner product-links-wap" role="listbox">
                     <!--First slide-->
                     <div class="carousel-item active">
-                      <div class="row">
+                      <div class="row align-items-center">
                         <div class="col-3 p-md-5">
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_01.png"
+                              src="assets/img/partners/Samsung.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -341,7 +296,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_02.png"
+                              src="assets/img/partners/Bata.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -349,7 +304,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_03.png"
+                              src="assets/img/partners/Evercare.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -357,7 +312,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_04.png"
+                              src="assets/img/partners/Meridian.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -367,12 +322,12 @@
 
                     <!--Second slide-->
                     <div class="carousel-item">
-                      <div class="row">
+                      <div class="row align-items-center">
                         <div class="col-3 p-md-5">
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_01.png"
+                              src="assets/img/partners/Agora.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -380,7 +335,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_02.png"
+                              src="assets/img/partners/G & G.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -388,7 +343,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_03.png"
+                              src="assets/img/partners/Ecstasy.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -396,7 +351,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_04.png"
+                              src="assets/img/partners/Hatil.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -406,12 +361,12 @@
 
                     <!--Third slide-->
                     <div class="carousel-item">
-                      <div class="row">
+                      <div class="row align-items-center">
                         <div class="col-3 p-md-5">
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_01.png"
+                              src="assets/img/partners/LG.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -419,7 +374,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_02.png"
+                              src="assets/img/partners/Walton.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -427,7 +382,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_03.png"
+                              src="assets/img/partners/Radission.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -435,7 +390,7 @@
                           <a href="#"
                             ><img
                               class="img-fluid brand-img"
-                              src="assets/img/brand_04.png"
+                              src="assets/img/partners/Sara.png"
                               alt="Brand Logo"
                           /></a>
                         </div>
@@ -452,7 +407,7 @@
               <div class="col-1 align-self-center">
                 <a
                   class="h1"
-                  href="#lebustore-slide-brand"
+                  href="#multi-item-example"
                   role="button"
                   data-bs-slide="next"
                 >
@@ -466,6 +421,94 @@
       </div>
     </section>
     <!--End Brands-->
+
+    <!-- Partners Start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row pt-3">
+          <div
+            class="col d-flex justify-content-between py-2 align-items-center"
+          >
+            <h2 class="text-success">
+              <span style="color: orange">Trusted</span>
+              Partners
+            </h2>
+            <a
+              href="about.html"
+              class="text-uppercase text-decoration-none text-dark"
+            >
+              About Us <i class="fa fa-arrow-right text-success ps-2"></i>
+            </a>
+          </div>
+          <hr />
+          <p class="fs-4">
+            Our story is co-authored by our trusted partners, who share our
+            vision of creating a world of savings.
+          </p>
+        </div>
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 container mx-auto align-items-center g-5"
+        >
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Aarong.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Agora.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Bata.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Ecstasy.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Evercare.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/G & G.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Grameenphone.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Hatil.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/LG.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Meridian.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Robi.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Sara.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners End -->
 
     <!-- Start Footer -->
     <footer
@@ -482,21 +525,25 @@
           class="container p-5"
           style="background-color: rgba(0, 0, 0, 0.85)"
         >
-          <div class="row text-light mb-4">
+          <div class="row text-light mb-4 align-items-center">
             <div class="col-12 col-lg-6 me-auto">
               <h2>Subscribe for the best deals!</h2>
               <p>Step into the world of online discount with us.</p>
             </div>
             <div class="col-12 col-lg-6">
-              <label class="sr-only" for="subscribeEmail text-white">Email address</label>
-              <div class="input-group mb-2">
+              <label class="sr-only" for="subscribeEmail text-white"
+                >Email address</label
+              >
+              <div class="input-group mb-2 position-relative">
                 <input
                   type="text"
-                  class="form-control bg-dark border-light text-white"
+                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
                   id="subscribeEmail"
                   placeholder="Email address"
                 />
-                <div class="input-group-text btn-success text-white fw-bold">
+                <div
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                >
                   Subscribe
                 </div>
               </div>
@@ -506,15 +553,12 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6 col-lg-3">
-              <a
-                href="index.html"
-                class="text-success border-bottom pb-3 border-light logo"
-              >
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
+            <div class="col">
+              <a href="index.html" class="text-success pb-3 border-light logo">
                 <img src="assets/img/LebuStore.png" alt="" />
               </a>
-              <p class="text-white py-3">
+              <p class="text-white py-3 footer-info">
                 LebuStore isn't just another e-commerce platform! it is a portal
                 to a world where all your dreams of the
               </p>
@@ -542,10 +586,41 @@
               </p>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Products
-              </h2>
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Important Links
+              </h3>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="product-details.html"
+                    >Offers</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Partners</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="contact.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Categories
+              </h3>
               <ul class="list-unstyled text-light footer-link-list">
                 <li>
                   <a class="text-decoration-none" href="#">Electronics</a>
@@ -556,29 +631,20 @@
                   <a class="text-decoration-none" href="#">Groceries</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="#">Sport Shoes</a>
+                  <a class="text-decoration-none" href="#">Shoes</a>
                 </li>
-              </ul>
-            </div>
-
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Further Info
-              </h2>
-              <ul class="list-unstyled text-light footer-link-list">
-                <li><a class="text-decoration-none" href="#">Home</a></li>
-                <li><a class="text-decoration-none" href="#">About Us</a></li>
                 <li>
-                  <a class="text-decoration-none" href="#">Shop Locations</a>
+                  <a class="text-decoration-none" href="#">Beauty</a>
                 </li>
-                <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                <li><a class="text-decoration-none" href="#">Contact</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Resort</a>
+                </li>
               </ul>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <h2 class="h2 text-light border-bottom pb-3 border-light">
-                Social Link
-              </h2>
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Follow Us
+              </h3>
               <ul class="list-inline text-left footer-icons">
                 <li
                   class="list-inline-item border border-light rounded-circle text-center bg-warning"

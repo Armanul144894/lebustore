@@ -13,7 +13,6 @@ $(document).ready(function() {
     var all_panels = $('.lebustore-accordion > li > ul').hide();
 
     $('.lebustore-accordion > li > a').click(function() {
-        console.log('Hello world!');
         var target =  $(this).next();
         if(!target.hasClass('active')){
             all_panels.removeClass('active').slideUp();
