@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore</title>
+    <title>Lebustore- Product Listing Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -15,12 +15,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
-
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
     <!-- Load fonts style after rendering the layout styles -->
     <link
@@ -86,7 +80,7 @@
       <div class="container d-flex align-items-center">
         <a
           class="navbar-brand text-success logo h1 align-self-center"
-          href="home.html"
+          href="shop.html"
         >
           <img src="assets/img/lebustore-logo-2.png" class="img-fluid" alt="" />
         </a>
@@ -139,7 +133,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Close Header -->
 
     <!-- Modal -->
@@ -184,137 +177,296 @@
       </div>
     </div>
 
-    <!-- Start Banner Hero -->
-    <div
-      id="Lebustore-hero-carousel"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-bs-target="#Lebustore-hero-carousel"
-          data-bs-slide-to="0"
-          class="active"
-        ></li>
-        <li
-          data-bs-target="#Lebustore-hero-carousel"
-          data-bs-slide-to="1"
-        ></li>
-        <li
-          data-bs-target="#Lebustore-hero-carousel"
-          data-bs-slide-to="2"
-        ></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url(assets/img/banner-bg.png);">
-          <div class="container">
-            <div class="row p-5">
-              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                <img
-                  class="img-fluid"
-                  src="./assets/img/banner_img_01.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-lg-6 mb-0 d-flex align-items-center">
-                <div class="text-align-left text-white align-self-center">
-                  <h1 class="h1 text-success"><b>Lebustore</b> eCommerce</h1>
+    <!-- Banner Start  -->
 
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe possimus aspernatur dolorem numquam quisquam alias
-                    vitae illum. Repellendus at velit enim voluptates a dolorem
-                    fuga tempore, quas, repellat cum quia.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(assets/img/banner-bg.png);">
-          <div class="container">
-            <div class="row p-5">
-              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+    <section>
+      <div
+        id="Lebustore-hero-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#Lebustore-hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#Lebustore-hero-carousel"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#Lebustore-hero-carousel"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner" >
+          <div class="carousel-item active">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
                 <img
-                  class="img-fluid"
-                  src="./assets/img/banner_img_02.jpg"
-                  alt=""
+                  src="assets/img/banner/discount-banner-bg.png"
+                  class="card-img img-fluid"
+                  style="min-height: 60vh; height: 100%"
+                  alt="..."
                 />
-              </div>
-              <div class="col-lg-6 mb-0 d-flex align-items-center">
-                <div class="text-align-left text-white">
-                  <h1 class="h1">Proident occaecat</h1>
-                  <h3 class="h2">Aliquip ex ea commodo consequat</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe possimus aspernatur dolorem numquam quisquam alias
-                    vitae illum. Repellendus at velit enim voluptates a dolorem
-                    fuga tempore, quas, repellat cum quia.
-                  </p>
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title h1">Search Best Coupon Deals</h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="IT">Italy</option>
+                              <option value="PT">Portugal</option>
+                              <option value="ES">Spain</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i class="fas fa-arrow-right text-warning"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(assets/img/banner-bg.png);">
-          <div class="container">
-            <div class="row p-5">
-              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+
+          <div class="carousel-item">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
                 <img
-                  class="img-fluid"
-                  src="./assets/img/banner_img_03.jpg"
-                  alt=""
+                  src="assets/img/banner/discount-banner-bg.png"
+                  class="card-img img-fluid"
+                  style="min-height: 60vh; height: 100%"
+                  alt="..."
                 />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title h1">Search Best Coupon Deals</h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="IT">Italy</option>
+                              <option value="PT">Portugal</option>
+                              <option value="ES">Spain</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i class="fas fa-arrow-right text-warning"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-6 mb-0 d-flex align-items-center">
-                <div class="text-align-left text-white">
-                  <h1>Repr in voluptate</h1>
-                  <h3 class="h2">Ullamco laboris nisi ut</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Saepe possimus aspernatur dolorem numquam quisquam alias
-                    vitae illum. Repellendus at velit enim voluptates a dolorem
-                    fuga tempore, quas, repellat cum quia.
-                  </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
+                <img
+                  src="assets/img/banner/discount-banner-bg.png"
+                  class="card-img img-fluid"
+                  style="min-height: 60vh; height: 100%"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title h1">Search Best Coupon Deals</h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="IT">Italy</option>
+                              <option value="PT">Portugal</option>
+                              <option value="ES">Spain</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i class="fas fa-arrow-right text-warning"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <a
+          class="carousel-control-prev text-decoration-none w-auto ps-3"
+          href="#Lebustore-hero-carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a
+          class="carousel-control-next text-decoration-none w-auto pe-3"
+          href="#Lebustore-hero-carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </a>
       </div>
-      <a
-        class="carousel-control-prev text-decoration-none w-auto ps-3"
-        href="#Lebustore-hero-carousel"
-        role="button"
-        data-bs-slide="prev"
-      >
-        <i class="fas fa-chevron-left"></i>
-      </a>
-      <a
-        class="carousel-control-next text-decoration-none w-auto pe-3"
-        href="#Lebustore-hero-carousel"
-        role="button"
-        data-bs-slide="next"
-      >
-        <i class="fas fa-chevron-right"></i>
-      </a>
-    </div>
+    </section>
 
     <!-- <section class="">
       <div class="card bg-dark text-white border-0">
-        <img src="assets/img/banner-bg.png" class="card-img" alt="..." />
+        <img
+          src="assets/img/banner/discount-banner-bg.png"
+          class="card-img img-fluid"
+          style="min-height: 50vh; height: 100%"
+          alt="..."
+        />
         <div
-          class="card-img-overlay d-flex justify-content-center align-items-center"
+          class="card-img-overlay d-flex justify-content-center align-items-center container"
         >
           <div class="text-center py-5">
-            <h1 class="card-title fs-md-1 fs-4">
-              Only the best Discounts & Coupons
-            </h1>
-            <p class="card-text fs-md-4 fs-6">
-              You will never have to pay for anything in full again
-            </p>
+            <h1 class="card-title h1">Search Best Coupon Deals</h1>
+
             <div
-              style="background-color: rgba(0, 0, 0, 0.555)"
+              style="background-color: rgba(0, 0, 0, 0.700)"
               class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
             >
               <div class="row align-items-center">
@@ -372,259 +524,20 @@
         </div>
       </div>
     </section> -->
-    <!-- End Banner Hero -->
 
-    <!-- Start Categories of The Month -->
-    <section class="bg-light py-5">
-      <div class="container">
-        <div class="row pt-3">
-          <div
-            class="col d-flex justify-content-between py-2 align-items-center"
-          >
-            <h2 class="text-success">
-              <!-- <span style="color: orange">Brows</span>  -->
-              Categories
+    <!-- Banner End  -->
+
+    <!-- Start Content -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Product Start -->
+
+          <div class="col-lg-9">
+            <h2 class="text-success border-bottom pb-2">
+              <span style="color: orange">Discounts &</span>
+              Coupons
             </h2>
-            <h6 class="text-uppercase">
-              View All <i class="fa fa-arrow-right text-success"></i>
-            </h6>
-          </div>
-          <hr />
-        </div>
-
-        <div class="swiper mySwiper py-5 position-relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div
-                class="h-100 py-5 services-icon-wap shadow position-relative"
-              >
-                <div class="h1 text-success text-center">
-                  <i class="fas fa-charging-station"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">Electronics</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="h-100 py-5 services-icon-wap shadow position-relative"
-              >
-                <div class="h1 text-success text-center">
-                  <i class="fa fa-tshirt"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">Fashion</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="h-100 py-5 services-icon-wap shadow position-relative">
-                <div class="h1 text-success text-center">
-                  <i class="fa fa-hand-holding-water"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">FMCG</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="h-100 py-5 services-icon-wap shadow position-relative">
-                <div class="h1 text-success text-center">
-                  <i class="fa fa-shoe-prints"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">Groceries</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="h-100 py-5 services-icon-wap shadow position-relative">
-                <div class="h1 text-success text-center">
-                  <i class="fa fa-snowman"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">Womens</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="h-100 py-5 services-icon-wap shadow position-relative">
-                <div class="h1 text-success text-center">
-                  <i class="fa fa-medal"></i>
-                </div>
-                <h2 class="h5 mt-4 text-center">Mens</h2>
-                <div class="color-element fw-bold">
-                  <p class="pt-4 pe-2">20</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-
-        <!-- <div class="row pt-5">
-          <div class="col-md-6 col-lg-3 pb-5">
-            <div class="h-100 py-5 services-icon-wap shadow position-relative">
-              <div class="h1 text-success text-center">
-                <i class="fas fa-charging-station"></i>
-              </div>
-              <h2 class="h5 mt-4 text-center">Electronics</h2>
-              <div class="color-element fw-bold">
-                <p class="pt-4 pe-2">20</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-5">
-            <div class="h-100 py-5 services-icon-wap shadow position-relative">
-              <div class="h1 text-success text-center">
-                <i class="fa fa-tshirt"></i>
-              </div>
-              <h2 class="h5 mt-4 text-center">Fashion</h2>
-              <div class="color-element fw-bold">
-                <p class="pt-4 pe-2">20</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-5">
-            <div class="h-100 py-5 services-icon-wap shadow position-relative">
-              <div class="h1 text-success text-center">
-                <i class="fa fa-hand-holding-water"></i>
-              </div>
-              <h2 class="h5 mt-4 text-center">FMCG</h2>
-              <div class="color-element fw-bold">
-                <p class="pt-4 pe-2">20</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 pb-5">
-            <div class="h-100 py-5 services-icon-wap shadow position-relative">
-              <div class="h1 text-success text-center">
-                <i class="fa fa-shoe-prints"></i>
-              </div>
-              <h2 class="h5 mt-4 text-center">Groceries</h2>
-              <div class="color-element fw-bold">
-                <p class="pt-4 pe-2">20</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-    <!-- End Categories of The Month -->
-
-    <!-- Biggest deals Start -->
-    <!-- <section>
-      <div class="card mb-3 border-0 bg-success">
-        <div class="row g-0">
-          <div class="col-6">
-            <img
-              src="assets/img/vector-1.png"
-              style="min-height: 70vh"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-6 my-auto">
-            <div class="card-body text-white px-lg-5">
-              <p class="fs-4 fs-lg-3 pe-lg-5 me-lg-5">
-                LebuStore isn't just another e-commerce platform! it is a portal
-                to a world where all your dreams of the
-              </p>
-              <h2 class="fs-3 fs-lg-1">
-                Biggest Deals <br />
-                Comes to Life!
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section>
-      <div
-        class="card text-white h-100 border-0 offer-section"
-        style="
-          background-image: url(assets/img/bg-2.png);
-          background-position: center;
-          background-size: 100% 100%;
-        "
-      >
-        <!-- <img src="assets/img/bg.png" class="card-img img-fluid" alt="..."  /> -->
-        <div
-          class="card-img-overlay row container justify-content-end mx-auto align-items-center"
-        >
-          <div class="col"></div>
-          <div
-            class="col-12 col-md-8 col-xl-6 d-flex justify-content-center flex-column px-0"
-          >
-            <p class="fs-4 fs-lg-3 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              laborum quo provident possimus, quam quibusdam veritatis, quasi
-              beatae accusamus cumque quaerat. Nostrum at accusantium quasi
-              porro consectetur voluptas sit odit.
-            </p>
-            <h2 class="fs-3 fs-lg-1">
-              Biggest Deals <br />
-              Comes to Life!
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Biggest deals End -->
-
-    <!-- Discount Start -->
-    <section class="container py-5">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card border-0 text-white">
-            <img src="assets/img/discount.jpg" class="card-img" alt="..." />
-            <div class="card-img-overlay d-flex align-items-center">
-              <div>
-                <p
-                  class="card-title fs-1 px-5"
-                  style="font-family: Bradley Hand ITC TT; line-height: 35px"
-                >
-                  Discount &<br />
-                  Coupons
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border-0 text-white">
-            <img src="assets/img/Gift Card.png" class="card-img" alt="..." />
-            <div class="card-img-overlay d-flex align-items-center">
-              <div>
-                <p
-                  class="card-title fs-1 px-5"
-                  style="font-family: Bradley Hand ITC TT; line-height: 35px"
-                >
-                  Exclusive <br />
-                  Gifts
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Discount End -->
-
-    <!-- Product Start -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col">
             <div class="row">
               <div class="col-xl-8">
                 <ul class="list-inline shop-top-menu py-4">
@@ -668,16 +581,196 @@
                   </div>
                 </div> -->
             </div>
-            <div class="row">
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+            <div class="row product-section">
+              <div class="col-md-6">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
+                      class="card-img img-fluid"
+                      src="assets/img/brands/Group 1.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
+                    >
+                    <h5 class="text-justify py-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </h5>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <del class="mb-0 text-muted">$300.00</del>
+                        <h5 class="mb-0 fs-5">$250.00</h5>
+                      </div>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img rounded img-fluid"
+                      src="assets/img/brands/Lotto.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
+                    >
+                    <h5 class="text-justify py-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </h5>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="d-flex align-items-center gap-3 fs-5">
+                        <del class="mb-0 text-muted">$300.00</del>
+                        <h5 class="mb-0 fs-5">$250.00</h5>
+                      </div>
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img rounded img-fluid"
+                      src="assets/img/brands/Yellow Bangladesh.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
+                    >
+                    <h5 class="text-justify py-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </h5>
+
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center pt-2"
+                    >
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/AArong.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -709,19 +802,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -729,15 +822,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
-                      src="assets/img//brands/Bata.png"
+                      class="card-img rounded img-fluid"
+                      src="assets/img/brands/Bata.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -769,19 +862,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -789,15 +882,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/GRAND SULTAN.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -829,19 +922,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -849,135 +942,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
-                      src="assets/img/brands/Lg.png"
-                    />
-                    <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                    >
-                      <ul class="list-unstyled">
-                        <li>
-                          <a
-                            class="btn btn-success text-white"
-                            href="product-details.html"
-                            ><i class="far fa-heart"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="btn btn-success text-white mt-2"
-                            href="product-details.html"
-                            ><i class="far fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="btn btn-success text-white mt-2"
-                            href="product-details.html"
-                            ><i class="fas fa-cart-plus"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="circle-badge">30%</div>
-                  </div>
-                  <div class="card-body">
-                    <a
-                      href="product-details.html"
-                      class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
-                    >
-                    <p class="text-justify">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Molestiae ad veniam libero, ab distinctio
-                    </p>
-
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <img src="assets/img/flag/ban-flag.png" alt="" />
-                      <p class="text-success fw-bold mb-0">Coupon Code</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
-                    <img
-                      class="card-img rounded-0 img-fluid bg-light"
-                      src="assets/img/brands/Radisson Dhaka.png"
-                    />
-                    <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                    >
-                      <ul class="list-unstyled">
-                        <li>
-                          <a
-                            class="btn btn-success text-white"
-                            href="product-details.html"
-                            ><i class="far fa-heart"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="btn btn-success text-white mt-2"
-                            href="product-details.html"
-                            ><i class="far fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="btn btn-success text-white mt-2"
-                            href="product-details.html"
-                            ><i class="fas fa-cart-plus"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="circle-badge">30%</div>
-                  </div>
-                  <div class="card-body">
-                    <a
-                      href="product-details.html"
-                      class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
-                    >
-                    <p class="text-justify">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Molestiae ad veniam libero, ab distinctio
-                    </p>
-
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
-                    </div>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <img src="assets/img/flag/ban-flag.png" alt="" />
-                      <p class="text-success fw-bold mb-0">Coupon Code</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
-                    <img
-                      class="card-img rounded-0 img-fluid bg-light"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/Meridien.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -1009,19 +982,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -1029,15 +1002,75 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0">
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
+                      class="card-img rounded img-fluid"
+                      src="assets/img/brands/Radisson Dhaka.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
+                    >
+                    <h5 class="text-justify py-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </h5>
+
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center pt-2"
+                    >
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/WALTON.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -1069,19 +1102,19 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -1089,15 +1122,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3">
-                <div class="card mb-4 product-wap rounded-0 border-0">
-                  <div class="card rounded-0 border-0 border-0">
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0 border-0">
                     <img
-                      class="card-img rounded-0 img-fluid bg-light"
+                      class="card-img rounded img-fluid"
                       src="assets/img/brands/XIAOMI.png"
                     />
                     <div
-                      class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
                     >
                       <ul class="list-unstyled">
                         <li>
@@ -1129,19 +1162,79 @@
                     <a
                       href="product-details.html"
                       class="h3 text-decoration-none"
-                      ><h5>Oupidatat non</h5></a
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
                     >
-                    <p class="text-justify">
+                    <h5 class="text-justify py-2">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Molestiae ad veniam libero, ab distinctio
-                    </p>
+                    </h5>
 
-                    <div class="d-flex align-items-center gap-3">
-                      <del class="mb-0">$300.00</del>
-                      <p class="mb-0">$250.00</p>
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
                     </div>
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pt-2"
+                    >
+                      <img src="assets/img/flag/ban-flag.png" alt="" />
+                      <p class="text-success fw-bold mb-0">Coupon Code</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 product-wap rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img rounded img-fluid"
+                      src="assets/img/brands/Lg.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white"
+                            href="product-details.html"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="btn btn-success text-white mt-2"
+                            href="product-details.html"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">30%</div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="product-details.html"
+                      class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">Oupidatat non</h5></a
+                    >
+                    <h5 class="text-justify py-2">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae ad veniam libero, ab distinctio
+                    </h5>
+
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">$300.00</del>
+                      <h5 class="mb-0 fs-5">$250.00</h5>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center pt-2"
                     >
                       <img src="assets/img/flag/ban-flag.png" alt="" />
                       <p class="text-success fw-bold mb-0">Coupon Code</p>
@@ -1151,434 +1244,278 @@
               </div>
             </div>
             <!-- <div div="row">
-              <ul class="pagination pagination-lg justify-content-end">
-                <li class="page-item disabled">
-                  <a
-                    class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"
-                    href="#"
-                    tabindex="-1"
-                    >1</a
-                  >
-                </li>
-                <li class="page-item">
-                  <a
-                    class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
-                    href="#"
-                    >2</a
-                  >
-                </li>
-                <li class="page-item">
-                  <a
-                    class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark"
-                    href="#"
-                    >3</a
-                  >
-                </li>
-              </ul>
-            </div> -->
+                <ul class="pagination pagination-lg justify-content-end">
+                  <li class="page-item disabled">
+                    <a
+                      class="page-link active rounded mr-3 shadow-sm border-top-0 border-left-0"
+                      href="#"
+                      tabindex="-1"
+                      >1</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a
+                      class="page-link rounded mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                      href="#"
+                      >2</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a
+                      class="page-link rounded shadow-sm border-top-0 border-left-0 text-dark"
+                      href="#"
+                      >3</a
+                    >
+                  </li>
+                </ul>
+              </div> -->
             <div class="text-center">
-              <button class="btn btn-outline-success border-success">
-                View All <i class="fa fa-arrow-right"></i>
+              <button
+                class="btn btn-outline-success border-success text-success bg-light"
+              >
+                View All <i class="fa fa-arrow-right ps-2"></i>
               </button>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Product End -->
 
-    <!-- Start Featured Product -->
-    <!-- <section class="bg-light">
-      <div class="container py-5">
-        <div class="row text-center py-3">
-          <div class="col-lg-6 m-auto">
-            <h1 class="h1">Featured Product</h1>
-            <p>
-              Reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card h-100">
-              <a href="product-details.html">
-                <img
-                  src="./assets/img/feature_prod_01.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-body">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                  <li class="text-muted text-right">$240.00</li>
-                </ul>
-                <a
-                  href="product-details.html"
-                  class="h2 text-decoration-none text-dark"
-                  >Gym Weight</a
+          <div class="col-lg-3">
+            <h1 class="h2 pb-2 border-bottom">Filter</h1>
+            <div class="mb-3 pt-4">
+              <h4 class="mb-2">Discount Range</h4>
+              <div
+                class="d-flex justify-content-between align-items-center discount-range"
+              >
+                <output
+                  id="amount"
+                  name="amount"
+                  min-velue="0"
+                  max-value="100"
+                  for="rangeInput"
+                  >0</output
                 >
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  in culpa qui officia deserunt.
-                </p>
-                <p class="text-muted">Reviews (24)</p>
+                <output class="text-success fw-bold">100</output>
               </div>
+              <input
+                type="range"
+                id="rangeInput"
+                name="rangeInput"
+                min="0"
+                max="100"
+                value="0"
+                oninput="amount.value=rangeInput.value"
+                class="form-range w-100"
+              />
             </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card h-100">
-              <a href="product-details.html">
-                <img
-                  src="./assets/img/feature_prod_02.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-body">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                  <li class="text-muted text-right">$480.00</li>
-                </ul>
+            <ul class="list-unstyled lebustore-accordion">
+              <li class="pb-3">
                 <a
-                  href="product-details.html"
-                  class="h2 text-decoration-none text-dark"
-                  >Cloud Nike Shoes</a
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
+                  href="#"
                 >
-                <p class="card-text">
-                  Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
-                  vitae pharetra sed, commodo ullamcorper.
-                </p>
-                <p class="text-muted">Reviews (48)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 mb-4">
-            <div class="card h-100">
-              <a href="product-details.html">
-                <img
-                  src="./assets/img/feature_prod_03.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </a>
-              <div class="card-body">
-                <ul class="list-unstyled d-flex justify-content-between">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                  </li>
-                  <li class="text-muted text-right">$360.00</li>
-                </ul>
-                <a
-                  href="product-details.html"
-                  class="h2 text-decoration-none text-dark"
-                  >Summer Addides Shoes</a
-                >
-                <p class="card-text">
-                  Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar
-                  sagittis diam, et scelerisque ipsum lobortis nec.
-                </p>
-                <p class="text-muted">Reviews (74)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Featured Product -->
-
-    <section>
-      <div
-        class="card text-white h-100 border-0 offer-section"
-        style="background-image: url(assets/img/bg.png)"
-      >
-        <!-- <img src="assets/img/bg.png" class="card-img img-fluid" alt="..."  /> -->
-        <div class="card-img-overlay row container mx-auto">
-          <div
-            class="col-12 col-md-8 col-lg-6 d-flex justify-content-center flex-column px-0"
-          >
-            <p class="fs-4 fs-lg-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              laborum quo provident possimus, quam quibusdam veritatis, quasi
-              beatae accusamus cumque quaerat. Nostrum at accusantium quasi
-              porro consectetur voluptas sit odit.
-            </p>
-            <h2 class="fs-3 fs-lg-1">
-              Biggest Deals <br />
-              Comes to Life!
-            </h2>
-          </div>
-          <div class="col"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Start Brands -->
-    <section class="bg-light py-5">
-      <div class="container">
-        <div class="row text-center py-3">
-          <div class="col-lg-6 m-auto">
-            <p class="fs-2 fw-bold">
-              We've got <br />
-              <span style="color: orange">your favorite</span>
-              <span class="text-success">brands</span> <br />
-              all year round
-            </p>
-          </div>
-          <div class="col-lg-12 m-auto lebustore-carousel">
-            <div class="row d-flex flex-row">
-              <!--Controls-->
-              <div class="col-1 align-self-center">
-                <a
-                  class="h1"
-                  href="#multi-item-example"
-                  role="button"
-                  data-bs-slide="prev"
-                >
-                  <i class="text-light fas fa-chevron-left"></i>
+                  Categories
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
                 </a>
-              </div>
-              <!--End Controls-->
-
-              <!--Carousel Wrapper-->
-              <div class="col bg-white">
-                <div
-                  class="carousel slide carousel-multi-item py-3"
-                  id="multi-item-example"
-                  data-bs-ride="carousel"
-                >
-                  <!--Slides-->
-                  <div class="carousel-inner product-links-wap" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                      <div class="row align-items-center">
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Samsung.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Bata.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Evercare.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Meridian.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--End First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item">
-                      <div class="row align-items-center">
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Agora.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/G & G.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Ecstasy.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Hatil.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--End Second slide-->
-
-                    <!--Third slide-->
-                    <div class="carousel-item">
-                      <div class="row align-items-center">
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/LG.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Walton.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Radission.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                        <div class="col-3 p-md-5">
-                          <a href="#"
-                            ><img
-                              class="img-fluid brand-img"
-                              src="assets/img/partners/Sara.png"
-                              alt="Brand Logo"
-                          /></a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--End Third slide-->
-                  </div>
-                  <!--End Slides-->
-                </div>
-              </div>
-              <!--End Carousel Wrapper-->
-
-              <!--Controls-->
-              <div class="col-1 align-self-center">
+                <ul class="collapse show list-unstyled pl-3">
+                  <li><a class="text-decoration-none" href="#">Men</a></li>
+                  <li><a class="text-decoration-none" href="#">Women</a></li>
+                </ul>
+              </li>
+              <li class="pb-3">
                 <a
-                  class="h1"
-                  href="#multi-item-example"
-                  role="button"
-                  data-bs-slide="next"
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
+                  href="#"
                 >
-                  <i class="text-light fas fa-chevron-right"></i>
+                  Brands
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
                 </a>
+                <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                  <li><a class="text-decoration-none" href="#">Sport</a></li>
+                  <li><a class="text-decoration-none" href="#">Luxury</a></li>
+                </ul>
+              </li>
+              <li class="pb-3">
+                <a
+                  class="collapsed border border-2 p-2 d-flex justify-content-between h3 text-decoration-none"
+                  href="#"
+                >
+                  Countries
+                  <i class="fa fa-fw fa-chevron-down mt-1"></i>
+                </a>
+                <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                  <li>
+                    <a class="text-decoration-none" href="#">Bangladesh</a>
+                  </li>
+                  <li><a class="text-decoration-none" href="#">Canada</a></li>
+                  <li><a class="text-decoration-none" href="#">USA</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="text-center">
+              <button
+                class="btn btn-success rounded-pill w-100 py-2 text-uppercase fw-bold"
+              >
+                Filter Coupons
+              </button>
+            </div>
+
+            <!-- Coupon Categories Start -->
+            <div class="card mt-5 bg-light">
+              <div class="card-body">
+                <h5 class="text-center fs-4">Coupon Categories</h5>
+                <ul class="list-unstyled pt-3">
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Fashion</a
+                      >
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Beauty</a
+                      >
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Cloth</a
+                      >
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Bag</a
+                      >
+                      <span class="coupon-num rounded">5</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Sunglass</a
+                      >
+                      <span class="coupon-num rounded">2</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >T-Shirt</a
+                      >
+                      <span class="coupon-num rounded">8</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        >Polo Shirt</a
+                      >
+                      <span class="coupon-num rounded">5</span>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <!--End Controls-->
+            </div>
+
+            <!-- Coupon Brands Start -->
+            <div class="card mt-5 bg-light">
+              <div class="card-body">
+                <h5 class="text-center fs-4">Coupon Brands</h5>
+                <ul class="list-unstyled pt-3">
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Bata.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Walton.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Radission.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">3</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Agora.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">5</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Samsung.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">2</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Meridian.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">8</span>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex justify-content-between pb-2">
+                      <a class="text-decoration-none h3 text-dark" href="#"
+                        ><img
+                          class="img-fluid w-50"
+                          src="assets/img/partners/Sara.png"
+                          alt=""
+                      /></a>
+                      <span class="coupon-num rounded">5</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!--End Brands-->
 
-    <!-- Partners Start -->
-    <!-- <section class="position-relative">
-      <div class="container">
-        <div class="row pt-3">
-          <div
-            class="col d-flex justify-content-between py-2 align-items-center"
-          >
-            <h2 class="text-success">
-              <span style="color: orange">Trusted</span> 
-               Partners
-            </h2>
-            <a href="about.html" class="text-uppercase text-decoration-none text-dark fw-bold">
-              About Us <i class="fa fa-arrow-right text-success ps-2"></i>
-            </a>
-          </div>
-          <hr />
-          <p class="fs-4">
-            Our story is co-authored by our trusted partners, who share our
-            vision of creating a world of savings.
-          </p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 container mx-auto">
-          <div class="col">
-            <article class="card border-0">
-              <img
-                class="card-img-top img-responsive"
-                src="assets/img/partners/p1.png"
-                alt="Deer in nature"
-              />
-              <div class="card-block">
-                <h4 class="card-title">Kazi Monirul Kabir</h4>
-                <h6 class="text-muted">CEO</h6>
-              </div>
-            </article>
-            
-          </div>
-          <div class="col">
-            <article class="card border-0">
-              <img
-                class="card-img-top img-responsive"
-                src="assets/img/partners/p2.png"
-                alt="Deer in nature"
-              />
-              <div class="card-block">
-                <h4 class="card-title">Kazi Monirul Kabir</h4>
-                <h6 class="text-muted">CEO</h6>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="card border-0">
-              <img
-                class="card-img-top img-responsive"
-                src="assets/img/partners/p3.png"
-                alt="Deer in nature"
-              />
-              <div class="card-block">
-                <h4 class="card-title">Kazi Monirul Kabir</h4>
-                <h6 class="text-muted">CEO</h6>
-              </div>
-            </article>
-          </div>
+          <!-- Product End -->
         </div>
       </div>
-      
     </section>
-    <section class="position-relative d-none d-md-block">
-      <div class="vector-bg ">
-        <img src="assets/img/partners/partner-bg.png" class="img-fluid" alt="">
-      </div>
-    </section> -->
-    <!-- Partners End -->
+    <!-- End Content -->
 
     <!-- Partners Start -->
     <section class="py-5">
@@ -1593,13 +1530,13 @@
             </h2>
             <a
               href="about.html"
-              class="text-uppercase text-decoration-none text-dark fw-bold"
+              class="text-uppercase text-decoration-none text-dark"
             >
               About Us <i class="fa fa-arrow-right text-success ps-2"></i>
             </a>
           </div>
           <hr />
-          <p class="fs-4">
+          <p class="fs-5">
             Our story is co-authored by our trusted partners, who share our
             vision of creating a world of savings.
           </p>
@@ -1937,60 +1874,11 @@
     <!-- End Footer -->
 
     <!-- Start Script -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/lebustore.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          1440:{
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
   </body>
 </html>
