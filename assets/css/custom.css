@@ -6,8 +6,8 @@ Custom Css
     position: absolute;
     top: -15px;
     right:-15px;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: #41b972;
     border-radius: 50%;
     display: flex;
@@ -38,6 +38,10 @@ Custom Css
     z-index: 999;
     width: 100%;
     background-color: white;
+  }
+
+  .carousel-item .card-img{
+    height: 430px !important;
   }
   
 
@@ -179,7 +183,19 @@ Custom Css
 }
 
 .footer-info{
-  text-align: justify;
+  color: #e7e6e6d0;
+}
+
+.footer-info li a{
+  color: #e7e6e6d0 !important;
+}
+
+footer .form-control{
+  background-color: #c7c7c7;
+}
+footer .form-control::placeholder{
+  color: black;
+  font-size: 20px;
 }
 
 
@@ -192,7 +208,7 @@ Custom Css
   background: #666666;
 }
 
-.shop-top-menu .list-inline-item .active{
+.shop-top-menu .active{
   background: white !important; 
   padding: 8px 12px;
   border-radius: 5px;
@@ -224,7 +240,26 @@ Custom Css
   object-fit: cover;
 }
 
-.carousel-indicators li{
-  display: none;
+
+.product-filters ul li{
+  cursor: pointer;
 }
 
+.card-footer{
+  background: none !important;
+  border-top: none;
+  padding-bottom: 25px;
+}
+
+.product-wap .card-body{
+  padding-bottom: 0 !important;
+}
+
+.product-overlay .list-unstyled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+}

@@ -25,6 +25,8 @@ $(document).ready(function() {
     });
     // End accordion
 
+   
+
     // Product detail
     $('.product-links-wap a').click(function(){
       var this_src = $(this).children('img').attr('src');
