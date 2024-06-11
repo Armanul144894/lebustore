@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore- Product Detail Page</title>
+    <title>Lebustore</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,79 +16,180 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Load fonts style after rendering the layout styles -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/e09dd379d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-
-    <!-- Header -->
-    <nav class="navbar header-section navbar-expand-lg navbar-light">
-      <div class="container d-flex align-items-center">
-        <a
-          class="navbar-brand text-success logo h1 align-self-center"
-          href="home.html"
-        >
-          <img src="assets/img/lebustore-logo-2.png" class="img-fluid" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#lebustore_main_nav"
-          aria-controls="lebustore_main_nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="lebustore_main_nav">
-          <ul
-            class="navbar-nav mr-auto w-100 justify-content-end align-items-lg-center gap-md-0 gap-xl-4 text-uppercase"
-          >
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Discounts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Coupons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Offers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacts</a>
-            </li>
-            <li class="nav-item">
+    <section class="header-section">
+      <!-- Start Top Nav -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+        id="lebustore_nav_top"
+      >
+        <div class="container text-light">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
               <a
-                class="nav-link btn btn-outline-success rounded-pill px-3 bg-white"
-                href=""
+                class="navbar-brand text-success logo align-self-center"
+                href="home.html"
               >
-                Login <i class="fa fa-unlock ps-2"></i>
+                <img src="assets/img/logo-v1.png" class="" alt="" />
               </a>
-            </li>
-          </ul>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categories</option>
+                <option value="Mens">Mens</option>
+                <option value="Womens">Womens</option>
+                <option value="Other">Others</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><i class="fa-regular fa-heart fs-3"></i>My Wishlist</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><img src="assets/img/icon/ICon.png" class="" alt="" />Gift
+                Box</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored "
+                ><div class="position-relative">
+                  <img src="assets/img/icon/Icon2.png" class="" alt="" />
+                  <span class="cart-badge">1</span>
+                </div>
+
+                My Cart
+              </a>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <i class="fas fa-user"></i> User
+                </button>
+                <ul class="user-dropdown dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <div class="dropdown-item d-flex gap-3">
+                      <div>
+                        <img src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp" class="rounded-circle" alt="">
+                      </div>
+                      <div>
+                        <h5 class="m-0">@user</h5>
+                        <p class="m-0 py-1" style="font-size: 16px !important;">Md Nazvi Islam</p>
+                        <button class="btn btn-success rounded-pill px-4">Edit Profile</button>
+                      </div>
+                    </div>
+                  </li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i> Account</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-gift me-2"></i> My Giftcards</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-gift me-2"></i> My Offers</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-credit-card me-2"></i> Subscription</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart me-2"></i>My Wishlist</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Preferences</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off me-2"></i>Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Close Header -->
+      </nav>
+      <!-- Close Top Nav -->
+      <!-- Header -->
+      <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center">
+          <a
+            class="navbar-brand text-success logo align-self-center d-block d-lg-none"
+            href="home.html"
+          >
+            <img
+              src="assets/img/lebustore-white-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#lebustore_main_nav"
+            aria-controls="lebustore_main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="lebustore_main_nav">
+            <ul
+              class="navbar-nav mr-auto w-100 justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Discounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coupons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Close Header -->
+    </section>
 
     <!-- Modal -->
     <div
@@ -132,210 +233,542 @@
       </div>
     </div>
 
+    <!-- Breadcrumb Start -->
+    <section class="bg-light py-4">
+      <div class="container">
+        <span class="" style="color: #6182b4; font-size: 16px"
+          ><a href="home.html">Home</a>
+          <span class="px-2">></span>
+          <a href="">Coupons</a>
+          <span class="px-2">></span>
+          <a href="">Yellow EID Offer</a></span
+        >
+      </div>
+    </section>
+    <!-- Breadcrumb End -->
+
     <!-- Open Content -->
     <section class="bg-light">
       <div class="container pb-5">
-        <div class="row">
-          <div class="col-lg-5 mt-5">
-            <div class="card mb-3">
-              <img
-                class="card-img img-fluid"
-                src="assets/img/feature_prod_01.jpg"
-                alt="Card image cap"
-                id="product-detail"
-              />
-            </div>
-            <div class="row">
-              <!--Start Controls-->
-              <div class="col-1 align-self-center">
-                <a
-                  href="#multi-item-example"
-                  role="button"
-                  data-bs-slide="prev"
-                >
-                  <i class="text-dark fas fa-chevron-left"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-              </div>
-              <!--End Controls-->
-              <!--Start Carousel Wrapper-->
-              <div
-                id="multi-item-example"
-                class="col-10 carousel slide carousel-multi-item"
-                data-bs-ride="carousel"
-              >
-                <!--Start Slides-->
-                <div class="carousel-inner product-links-wap" role="listbox">
-                  <!--First slide-->
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 1"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 2"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 3"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/.First slide-->
+        <div class="row g-5">
+          <div class="col-lg-8 mt-5">
+            <section class="slider px-0">
+              <div class="slider__flex">
+                <div class="slider__col">
+                  <!-- <div class="slider__prev text-dark">Prev</div> -->
 
-                  <!--Second slide-->
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 4"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 5"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 6"
-                          />
-                        </a>
+                  <div class="slider__thumbs">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="assets/img/product-details/yellow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="assets/img/product-details/Group 2.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="assets/img/product-details/yellow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="slider__image">
+                            <img
+                              src="assets/img/product-details/Group 2.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!--/.Second slide-->
 
-                  <!--Third slide-->
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 7"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 8"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4">
-                        <a href="#">
-                          <img
-                            class="card-img img-fluid"
-                            src="assets/img/feature_prod_03.jpg"
-                            alt="Product Image 9"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/.Third slide-->
+                  <!-- <div class="slider__next text-dark">Next</div> -->
                 </div>
-                <!--End Slides-->
+
+                <div class="slider__images">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="assets/img/product-details/yellow.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="assets/img/product-details/Group 2.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="assets/img/product-details/yellow.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider__image">
+                          <img
+                            src="assets/img/product-details/Group 2.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!--End Carousel Wrapper-->
-              <!--Start Controls-->
-              <div class="col-1 align-self-center">
-                <a
-                  href="#multi-item-example"
-                  role="button"
-                  data-bs-slide="next"
+            </section>
+
+            <!-- Product Details -->
+            <section class="my-5">
+              <div>
+                <div>
+                  <h2 class="" style="color: #333333">Product Details</h2>
+                </div>
+
+                <div class="row justify-content-end">
+                  <div class="col-xl-12 product-filters">
+                    <ul
+                      class="list-inline shop-top-menu pb-4 d-flex flex-wrap gap-3 align-items-center justify-content-md-end"
+                    >
+                      <!-- <li data-filter="all" class="active list-inline-item me-lg-5">
+                        <a class="text-uppercase text-dark text-decoration-none"
+                          >All</a
+                        >
+                      </li> -->
+                      <li
+                        class="list-inline-item border border-2 px-3 py-2 rounded active"
+                        data-filter="all"
+                      >
+                        <a
+                          class="text-uppercase text-decoration-none fw-normal fs-6"
+                          >Discount</a
+                        >
+                      </li>
+
+                      <li
+                        class="list-inline-item border border-2 px-3 py-2 rounded"
+                        data-filter="review"
+                      >
+                        <a
+                          class="text-uppercase text-decoration-none fw-normal fs-6"
+                          >Review</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <h4 class="pb-3" style="color: #333333">What You Get</h4>
+                  <p class="fs-5 lh-lg text-justify">
+                    Yellow EID Offer Upto 20% OFF With Coupon & Promo Codes.
+                    YELLOW, the trendiest fashion brand from Bangladesh, is
+                    mostly distinguished for its true international quality
+                    designs and fabrics. We are inspired by our customers- souls
+                    full of unconventional fashion senses. As a retailer of our
+                    parent brand BEXIMCO, we started our journey in 2004 and now
+                    we have 19 stores across Bangladesh and a 24/7 online store.
+                    Since origin, we have been offering world class designs at
+                    amazing value price. Our product line includes a wide range
+                    of fashion clothing, fragrance, and accessories for men,
+                    women and children; textiles for home decoration, ceramic
+                    items and many more.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="pb-3 pt-3" style="color: #333333">
+                    About The Deal
+                  </h4>
+                  <p class="fs-5 lh-lg text-justify">
+                    Yellow EID Offer Upto 20% OFF With Coupon & Promo Codes.
+                    YELLOW, the trendiest fashion brand from Bangladesh, is
+                    mostly distinguished for its true international quality
+                    designs and fabrics. We are inspired by our customers- souls
+                    full of unconventional fashion senses. As a retailer of our
+                    parent brand BEXIMCO, we started our journey in 2004 and now
+                    we have 19 stores across Bangladesh and a 24/7 online store.
+                    Since origin, we have been offering world class designs at
+                    amazing value price. Our product line includes a wide range
+                    of fashion clothing, fragrance, and accessories for men,
+                    women and children; textiles for home decoration;
+                    avant-garde ceramic items; paintings; books; and many more.
+                    Explore YELLOW and look through our windows for contemporary
+                    global fashion trends.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 class="pb-3 pt-5" style="color: #333333">
+                    Coupon Highlights
+                  </h4>
+
+                  <ul>
+                    <li class="py-2 fs-5">EID Offer expires in 7 Days.</li>
+                    <li class="py-2 fs-5">
+                      No discounted/special offer item will be exchanged/
+                      refundable.
+                    </li>
+                    <li class="py-2 fs-5">No monetary refund is acceptable.</li>
+                    <li class="py-2 fs-5">EID Offer expires in 7 Days.</li>
+                    <li class="py-2 fs-5">
+                      No discounted/special offer item will be exchanged/
+                      refundable.
+                    </li>
+                    <li class="py-2 fs-5">No monetary refund is acceptable.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <hr />
+
+            <section class="py-5">
+              <div class="">
+                <h4 class="pb-3" style="color: #333333">
+                  Customer Ratings & Review
+                </h4>
+                <div
+                  class="card border-0 p-4"
+                  style="background-color: #f2f2f2"
                 >
-                  <i class="text-dark fas fa-chevron-right"></i>
-                  <span class="sr-only">Next</span>
-                </a>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-md-4 col-12">
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          <div>
+                            <h3 class="fs-1 m-0">4.5</h3>
+                          </div>
+                          <div>
+                            <span>
+                              <i class="fa fa-star" style="color: #f1c830"></i>
+                              <i class="fa fa-star" style="color: #f1c830"></i>
+                              <i class="fa fa-star" style="color: #f1c830"></i>
+                              <i class="fa fa-star" style="color: #f1c830"></i>
+                              <i
+                                class="fa fa-star-half-stroke"
+                                style="color: #f1c830"
+                              ></i>
+                            </span>
+                            <p class="m-0">9 Ratings</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8 col-12">
+                        <div class="row align-content-center">
+                          <div class="col-3 text-end">
+                            <span
+                              >5
+                              <i class="fa fa-star" style="color: #f1c830"></i
+                            ></span>
+                          </div>
+                          <div class="progress col-6 my-auto">
+                            <div
+                              class="progress-bar bg-warning"
+                              role="progressbar"
+                              style="width: 70%; background: #f1c830 !important"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div class="col-3">
+                            <span>6</span>
+                          </div>
+                        </div>
+                        <div class="row align-content-center">
+                          <div class="col-3 text-end">
+                            <span
+                              >4
+                              <i class="fa fa-star" style="color: #f1c830"></i
+                            ></span>
+                          </div>
+                          <div class="progress col-6 my-auto">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 50%; background: #f1c830"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div class="col-3">
+                            <span>2</span>
+                          </div>
+                        </div>
+                        <div class="row align-content-center">
+                          <div class="col-3 text-end">
+                            <span
+                              >3
+                              <i class="fa fa-star" style="color: #f1c830"></i
+                            ></span>
+                          </div>
+                          <div class="progress col-6 my-auto">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 30%; background: #f1c830"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div class="col-3">
+                            <span>1</span>
+                          </div>
+                        </div>
+                        <div class="row align-content-center">
+                          <div class="col-3 text-end">
+                            <span
+                              >2
+                              <i class="fa fa-star" style="color: #f1c830"></i
+                            ></span>
+                          </div>
+                          <div class="progress col-6 my-auto">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 0%; background: #f1c830"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div class="col-3">
+                            <span>0</span>
+                          </div>
+                        </div>
+                        <div class="row align-content-center">
+                          <div class="col-3 text-end">
+                            <span
+                              >1
+                              <i class="fa fa-star" style="color: #f1c830"></i
+                            ></span>
+                          </div>
+                          <div class="progress col-6 my-auto">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 0%; background: #f1c830"
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div class="col-3">
+                            <span>0</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!--End Controls-->
-            </div>
-          </div>
-          <!-- col end -->
-          <div class="col-lg-7 mt-5">
-            <div class="card">
-              <div class="card-body">
-                <h1 class="h2">Active Wear</h1>
-                <p class="h3 py-2">$25.00</p>
-                <p class="py-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-secondary"></i>
-                  <span class="list-inline-item text-dark"
-                    >Rating 4.8 | 36 Comments</span
-                  >
-                </p>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <h6>Brand:</h6>
-                  </li>
-                  <li class="list-inline-item">
-                    <p class="text-muted"><strong>Easy Wear</strong></p>
-                  </li>
-                </ul>
+            </section>
 
-                <h6>Description:</h6>
+            <section class="">
+              <div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod temp incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse. Donec condimentum elementum convallis.
-                  Nunc sed orci a diam ultrices aliquet interdum quis nulla.
+                  100 reviews for
+                  <span class="text-uppercase">Yellow 20% OFF</span> Coupon
                 </p>
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <h6>Avaliable Color :</h6>
-                  </li>
-                  <li class="list-inline-item">
-                    <p class="text-muted"><strong>White / Black</strong></p>
-                  </li>
-                </ul>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-xl-8 col-12">
+                  <div class="card mb-3 bg-light border-0">
+                    <div class="d-flex gap-3 align-items-center">
+                      <div class="">
+                        <img
+                          src="assets/img/product-details/user.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="">
+                        <div class="card-body">
+                          <h5 class="stars-outer"></h5>
+                          <h6 class="text-black-50 mb-0">
+                            David - <span>April 20, 2024</span>
+                          </h6>
+                          <p class="card-text">
+                            <small class=""
+                              >I like the deal a lot. Hope to get such deal
+                              again</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-xl-8 col-12">
+                  <div class="card mb-3 bg-light border-0">
+                    <div class="d-flex gap-3 align-items-center">
+                      <div class="">
+                        <img
+                          src="assets/img/product-details/user.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="">
+                        <div class="card-body">
+                          <h5 class="stars-outer"></h5>
+                          <h6 class="text-black-50 mb-0">
+                            David - <span>April 20, 2024</span>
+                          </h6>
+                          <p class="card-text">
+                            <small class=""
+                              >I like the deal a lot. Hope to get such deal
+                              again</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-xl-8 col-12">
+                  <div class="card mb-3 bg-light border-0">
+                    <div class="d-flex gap-3 align-items-center">
+                      <div class="">
+                        <img
+                          src="assets/img/product-details/user.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="">
+                        <div class="card-body">
+                          <h5 class="stars-outer"></h5>
+                          <h6 class="text-black-50 mb-0">
+                            David - <span>April 20, 2024</span>
+                          </h6>
+                          <p class="card-text">
+                            <small class=""
+                              >I like the deal a lot. Hope to get such deal
+                              again</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10 col-xl-8 col-12">
+                  <div class="card mb-3 bg-light border-0">
+                    <div class="d-flex gap-3 align-items-center">
+                      <div class="">
+                        <img
+                          src="assets/img/product-details/user.png"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="">
+                        <div class="card-body">
+                          <h5 class="stars-outer"></h5>
+                          <h6 class="text-black-50 mb-0">
+                            David - <span>April 20, 2024</span>
+                          </h6>
+                          <p class="card-text">
+                            <small class=""
+                              >I like the deal a lot. Hope to get such deal
+                              again</small
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-decoration-none">See all reviews</a>
+              </div>
+            </section>
+          </div>
 
-                <h6>Specification:</h6>
-                <ul class="list-unstyled pb-3">
-                  <li>Lorem ipsum dolor sit</li>
-                  <li>Amet, consectetur</li>
-                  <li>Adipiscing elit,set</li>
-                  <li>Duis aute irure</li>
-                  <li>Ut enim ad minim</li>
-                  <li>Dolore magna aliqua</li>
-                  <li>Excepteur sint</li>
-                </ul>
+          <div class="col-lg-4 mt-5 position-relative product-cart">
+            <div class="card position-relative" style="background-color: #3b4837">
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center gap-3"
+                  ><img
+                    src="assets/img/country/UAE.png"
+                    style="width: 40px"
+                    alt=""
+                  />
+                  <h6 style="color: #e6e5ea" class="mb-0 text-uppercase">
+                    UAE
+                  </h6></a
+                >
+                <h5
+                  class="text-justify pt-3 pb-2"
+                  style="color: white; font-size: 20px; font-weight: bold"
+                >
+                  LG SALE end Friday! Extra 20% on Electronics With Code
+                </h5>
+
+                <a
+                  href="#"
+                  class="text-decoration-none d-flex align-items-center gap-3"
+                >
+                  <p style="color: #e6e5ea" class="mb-0">Brand:</p>
+                  <img
+                    src="assets/img/product-details/Logo (1).png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+                <div class="d-flex align-items-center gap-3 py-3">
+                  <del class="mb-0 text-muted"
+                    ><i class="fa-solid fa-bangladeshi-taka-sign"></i> 100</del
+                  >
+                  <div class="offer-price">
+                    <h5 class="mb-0 text-success">
+                      <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                    </h5>
+                  </div>
+                  <div>
+                    <p class="mb-0 text-white">You Save: 20%</p>
+                  </div>
+                </div>
+
+                <div class="pb-5">
+                  <p class="mb-0 text-white">SKU: LB3GI-0097802-001009-35</p>
+                </div>
 
                 <form action="" method="GET">
                   <input
@@ -343,7 +776,7 @@
                     name="product-title"
                     value="Activewear"
                   />
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-auto">
                       <ul class="list-inline pb-3">
                         <li class="list-inline-item">
@@ -393,22 +826,22 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
-                  <div class="row pb-3">
-                    <div class="col d-grid">
+                  </div> -->
+                  <div class="row pb-3 g-3">
+                    <div class="col-12 d-grid">
                       <button
                         type="submit"
-                        class="btn btn-success btn-lg"
+                        class="btn btn-success btn-lg rounded-pill"
                         name="submit"
                         value="buy"
                       >
                         Buy
                       </button>
                     </div>
-                    <div class="col d-grid">
+                    <div class="col-12 d-grid">
                       <button
                         type="submit"
-                        class="btn btn-success btn-lg"
+                        class="btn btn-outline-light btn-lg rounded-pill"
                         name="submit"
                         value="addtocard"
                       >
@@ -418,931 +851,1206 @@
                   </div>
                 </form>
               </div>
+            <div class="circle-badge">
+              30% <br />
+              OFF
+            </div>
+            </div>
+
+            <!-- Company -->
+            <div class="mt-5">
+              <div>
+                <h4 class="pb-2" style="color: #333333">Company</h4>
+              </div>
+              <div>
+                <div class="card border-0" style="background-color: #f2f2f2">
+                  <div class="card-body px-4">
+                    <div class="text-center py-4">
+                      <img
+                        src="assets/img/product-details/yellow-logo.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-title text-uppercase fw-bold">
+                      <h6>Yellow By Baximco</h6>
+                    </div>
+                    <p style="font-size: 16px !important" class="text-justify">
+                      YELLOW, the trendiest fashion brand from Bangladesh, is
+                      mostly distinguished for its true international quality
+                      designs and fabrics. We are inspired by our customers-
+                      souls full of unconventional fashion senses. As a retailer
+                      of our parent brand BEXIMCO, we started our journey in
+                      2004 and now we have 19 stores across Bangladesh and a
+                      24/7 online store. Since origin, we have been offering
+                      world class designs at amazing value price.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Start Article -->
+      <section class="pb-5">
+        <div class="container">
+          <div class="row text-left p-2 pb-3">
+            <div>
+              <h2 class="pb-2" style="color: #333333">
+                Similar Discounts & Coupons
+              </h2>
+            </div>
+          </div>
+
+          <!--Start Carousel Wrapper-->
+          <div id="carousel-related-product">
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="latest-deals">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid"
+                    src="assets/img/brands/GRAND SULTAN.png"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">GRAND SULTAN</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        GRAND SULTAN
+                      </h6></a
+                    >
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Grand Sultan Tea Resort & Golf Srimongal Offers 20% Coupon
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="top-brands">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/WALTON.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0 text-uppercase">
+                        WALTON
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        WALTON
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Walto Eid Offers Upto 30% OFF With Coupon & Promo Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="latest-deals">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/Meridien.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">MERIDIAN DHAKA</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        MERIDIAN DHAKA
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Le Meridian Dhaka Offers 30% OFF With Coupon Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="top-brands">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/Radisson Dhaka.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0 text-uppercase">
+                        Radisson Dhaka
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        Radisson Dhaka
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Radisson Dhaka Offers 30% OFF With Coupon & Promo Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="popular">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/XIAOMI.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0 text-uppercase">
+                        XIAOMI
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        XIAOMI
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Xiaomi SALE! Extra 20% on Mobile With Code
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2 pb-3">
+              <div class="product position-relative" data-filter="popular">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/Lg.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0 text-uppercase">
+                        LG DUBAI
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/flag/Flag.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        LG DUBAI
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      LG SALE end Friday! Extra 20% on Electronics With Code
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Article -->
+
+      <!-- related product start -->
+      <!-- <section class="container pb-5">
+        <div>
+          <h2 class="pb-2" style="color: #333333">
+            Similar Discounts & Coupons
+          </h2>
+        </div>
+
+        <div>
+          Swiper
+          <div class="swiper mySwiper2 pt-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product position-relative" data-filter="popular">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/XIAOMI.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0 text-uppercase">
+                          XIAOMI
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          XIAOMI
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Xiaomi SALE! Extra 20% on Mobile With Code
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="circle-badge">
+                    30% <br />
+                    OFF
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide product position-relative">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid"
+                    src="assets/img/brands/AArong.png"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">AARONG</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0">AARONG</h6></a
+                    >
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Aarong Summer sale offer upto 20% OFF With Coupon & Promo
+                      Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div class="swiper-slide product position-relative">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid"
+                    src="assets/img/brands/Bata.png"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">BATA</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0">BATA</h6></a
+                    >
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      5% Cash Back For Purchases Sitewide
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div class="swiper-slide product position-relative">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid"
+                    src="assets/img/brands/GRAND SULTAN.png"
+                  />
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">GRAND SULTAN</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        GRAND SULTAN
+                      </h6></a
+                    >
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Grand Sultan Tea Resort & Golf Srimongal Offers 20% Coupon
+                      Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div class="swiper-slide product position-relative">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/Meridien.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0">MERIDIAN DHAKA</p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        MERIDIAN DHAKA
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Le Meridian Dhaka Offers 30% OFF With Coupon & Promo Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div class="swiper-slide product position-relative">
+                <div class="card h-100 product-card">
+                  <img
+                    class="card-img img-fluid border-bottom"
+                    src="assets/img/brands/WALTON.png"
+                  />
+
+                  <div class="overlay">
+                    <div class="overlay-content">
+                      <p style="color: #ffffff" class="mb-0 text-uppercase">
+                        WALTON
+                      </p>
+                      <div
+                        class="d-flex align-items-center justify-content-center gap-3"
+                      >
+                        <del class="mb-0"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="#"
+                      class="text-decoration-none d-flex align-items-center gap-3"
+                      ><img
+                        src="assets/img/country/UAE.png"
+                        style="width: 40px"
+                        alt=""
+                      />
+                      <h6 style="color: #666666" class="mb-0 text-uppercase">
+                        WALTON
+                      </h6></a
+                    >
+
+                    <h5
+                      class="text-justify pt-3 pb-2"
+                      style="color: #323232; font-size: 17px"
+                    >
+                      Walto Eid Offers Upto 30% OFF With Coupon & Promo Codes
+                    </h5>
+                    <div>
+                      <div class="d-flex align-items-center gap-3">
+                        <del class="mb-0 text-muted"
+                          ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          100</del
+                        >
+                        <div class="offer-price">
+                          <h5 class="mb-0 text-success">
+                            <i class="fa-solid fa-bangladeshi-taka-sign"></i> 75
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <a href="#" class="text-decoration-none">
+                          <p
+                            class="fw-bold mb-0 d-flex align-items-center gap-4"
+                            style="color: #797979"
+                          >
+                            Coupon Code
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a class="btn btn-success text-white wishlist" href="#"
+                          ><i class="far fa-heart"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="btn btn-success text-white view" href="#"
+                          ><i class="far fa-eye"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section> -->
+      <!-- related product end -->
     </section>
     <!-- Close Content -->
-
-    <!-- Start Article -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row text-left p-2 pb-3">
-          <h4>Related Products</h4>
-        </div>
-
-        <!--Start Carousel Wrapper-->
-        <div id="carousel-related-product">
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_01.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Red Clothing</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$20.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_02.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >White Shirt</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$25.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_03.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$45.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_01.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Black Fashion</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$60.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_02.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li class="">M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$80.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_03.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$110.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_01.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$125.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_02.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$160.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_03.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$180.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_01.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$220.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_02.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$250.00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-2 pb-3">
-            <div class="product-wap card rounded-0">
-              <div class="card rounded-0">
-                <img
-                  class="card-img rounded-0 img-fluid"
-                  src="assets/img/feature_prod_03.jpg"
-                />
-                <div
-                  class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"
-                >
-                  <ul class="list-unstyled">
-                    <li>
-                      <a
-                        class="btn btn-success text-white"
-                        href="product-details.html"
-                        ><i class="far fa-heart"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="far fa-eye"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        class="btn btn-success text-white mt-2"
-                        href="product-details.html"
-                        ><i class="fas fa-cart-plus"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body">
-                <a href="product-details.html" class="h3 text-decoration-none"
-                  >Oupidatat non</a
-                >
-                <ul
-                  class="w-100 list-unstyled d-flex justify-content-between mb-0"
-                >
-                  <li>M/L/X/XL</li>
-                  <li class="pt-2">
-                    <span
-                      class="product-color-dot color-dot-red float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-blue float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-black float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-light float-left rounded-circle ml-1"
-                    ></span>
-                    <span
-                      class="product-color-dot color-dot-green float-left rounded-circle ml-1"
-                    ></span>
-                  </li>
-                </ul>
-                <ul class="list-unstyled d-flex justify-content-center mb-1">
-                  <li>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-warning fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                    <i class="text-muted fa fa-star"></i>
-                  </li>
-                </ul>
-                <p class="text-center mb-0">$300.00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Article -->
 
     <!-- Start Footer -->
     <footer
       class="bg-dark"
       style="
-        background-image: url(assets/img/footer-bg.jpg);
+        background-image: url(assets/img/FooterImage.png);
         background-size: cover;
         background-position: center;
       "
@@ -1351,28 +2059,30 @@
       <div class="py-5">
         <div
           class="container p-5"
-          style="background-color: rgba(0, 0, 0, 0.85)"
+          style="background-color: rgba(24, 23, 23, 0.85)"
         >
           <div class="row text-light mb-4 align-items-center">
-            <div class="col-12 col-lg-6 me-auto">
-              <h2>Subscribe for the best deals!</h2>
-              <p class="text-muted">
+            <div class="col-12 col-lg-6 me-auto footer-info">
+              <h3 class="text-white fw-normal">
+                Subscribe for the best deals!
+              </h3>
+              <p class="footer-info">
                 Step into the world of online discount with us.
               </p>
             </div>
             <div class="col-12 col-lg-6">
               <label class="sr-only" for="subscribeEmail text-white"
-                >Email address</label
+                >Enter Email Address</label
               >
               <div class="input-group mb-2 position-relative">
                 <input
                   type="text"
-                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
+                  class="form-control border-light text-white rounded-pill px-4 py-3"
                   id="subscribeEmail"
-                  placeholder="Email address"
+                  placeholder="Enter Email Address"
                 />
                 <div
-                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-3"
                 >
                   Subscribe
                 </div>
@@ -1385,33 +2095,16 @@
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
             <div class="col">
-              <a href="index.html" class="text-success pb-3 border-light logo">
-                <img src="assets/img/LebuStore.png" alt="" />
+              <a href="home.html" class="pb-3 border-light logo">
+                <img src="assets/img/lebustore-white-logo.png" alt="" />
               </a>
-              <p class="text-white py-3 footer-info text-justify">
+              <p class="py-3 footer-info text-justify">
                 It might should like a fairytale but with lebustore it's nothing
                 but the truth! where you can save, share and shop to your
                 heart's content.
               </p>
-              <!-- <ul class="list-unstyled text-light footer-link-list">
-                <li>
-                  <i class="fas fa-map-marker-alt fa-fw"></i>
-                  123 Consectetur at ligula 10660
-                </li>
-                <li>
-                  <i class="fa fa-phone fa-fw"></i>
-                  <a class="text-decoration-none" href="tel:010-020-0340"
-                    >010-020-0340</a
-                  >
-                </li>
-                <li>
-                  <i class="fa fa-envelope fa-fw"></i>
-                  <a class="text-decoration-none" href="mailto:info@company.com"
-                    >info@company.com</a
-                  >
-                </li>
-              </ul> -->
-              <p class="text-left text-light pt-4">
+
+              <p class="text-left pt-4 footer-info">
                 Copyright &copy; 2024 Company Name | Designed by
                 <a
                   rel="sponsored"
@@ -1423,43 +2116,39 @@
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Important Links
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
-                  <a class="text-decoration-none" href="index.html">Home</a>
+                  <a class="text-decoration-none" href="home.html">Home</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="about.html">About</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                  <a class="text-decoration-none" href="#">Discounts</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                  <a class="text-decoration-none" href="#">Coupons</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="product-details.html"
-                    >Offers</a
-                  >
+                  <a class="text-decoration-none" href="#">Offers</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="#">Partners</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="contact.html"
-                    >Contacts</a
-                  >
+                  <a class="text-decoration-none" href="#">Contacts</a>
                 </li>
               </ul>
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Categories
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
                   <a class="text-decoration-none" href="#">Electronics</a>
                 </li>
@@ -1480,12 +2169,12 @@
               </ul>
             </div>
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Follow Us
-              </h3>
+              </h5>
               <ul class="list-inline text-left footer-icons">
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -1495,7 +2184,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -1505,17 +2194,17 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
                     target="_blank"
                     href="https://twitter.com/"
-                    ><i class="fab fa-twitter fa-lg fa-fw"></i
+                    ><i class="fa-brands fa-x-twitter"></i
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -1527,85 +2216,8 @@
               </ul>
             </div>
           </div>
-
-          <!-- <div class="row text-light mb-4">
-            <div class="col-12 mb-3">
-              <div class="w-100 my-3 border-top border-light"></div>
-            </div>
-            <div class="col-auto me-auto">
-              <ul class="list-inline text-left footer-icons">
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="http://facebook.com/"
-                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://www.instagram.com/"
-                    ><i class="fab fa-instagram fa-lg fa-fw"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://twitter.com/"
-                    ><i class="fab fa-twitter fa-lg fa-fw"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://www.linkedin.com/"
-                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-auto">
-              <label class="sr-only" for="subscribeEmail">Email address</label>
-              <div class="input-group mb-2">
-                <input
-                  type="text"
-                  class="form-control bg-dark border-light"
-                  id="subscribeEmail"
-                  placeholder="Email address"
-                />
-                <div class="input-group-text btn-success text-light">
-                  Subscribe
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
-
-      <!-- <div class="w-100 bg-black py-3">
-        <div class="container">
-          <div class="row pt-2">
-            <div class="col-12">
-              <p class="text-left text-light">
-                Copyright &copy; 2024 Company Name | Designed by
-                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </footer>
     <!-- End Footer -->
 
@@ -1615,6 +2227,10 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-1.11.0.min.js"></script>
@@ -1635,23 +2251,37 @@
         dots: true,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1440,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
             },
           },
           {
-            breakpoint: 600,
+            breakpoint: 1024,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 3,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 560,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
               slidesToScroll: 3,
             },
           },

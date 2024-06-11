@@ -30,25 +30,37 @@ a,
 label,
 input,
 div {
-  font-family: "Arial", "Times New Roman";
+  font-family: "lato";
 }
 .h1 {
-  font-family: "Arial", "Times New Roman";
-  font-size: 50px !important;
+  font-family: "lato" !important;
+  font-size: 60px !important;
   font-weight: 700 !important;
 }
 .h2 {
-  font-family: "Arial", "Times New Roman";
+  font-family: "lato" !important;
   font-size: 30px !important;
   font-weight: 300;
 }
 .h3 {
-  font-family: "Arial", "Times New Roman";
+  font-family: "lato" !important;
   font-size: 22px !important;
 }
+
+p{
+  font-family: "lato" !important;
+  font-size: 20px !important;
+}
+a{
+  text-decoration: none;
+  color: #6182b4;
+}
 /* General */
-.logo {
+.logo img{
   font-weight: 500 !important;
+  width:125px !important;
+  object-fit: cover;
+  height: auto;
 }
 .text-warning {
   color: #ede861 !important;
@@ -57,7 +69,7 @@ div {
   color: #bcbcbc !important;
 }
 .text-success {
-  color: #59ab6e !important;
+  color: #26973d !important;
 }
 .text-light {
   color: #cfd6e1 !important;
@@ -66,17 +78,17 @@ div {
   background-color: #212934 !important;
 }
 .bg-light {
-  background-color: #e9eef5 !important;
+  background-color: #eaebef !important;
 }
 .bg-black {
   background-color: #1d242d !important;
 }
 .bg-success {
-  background-color: #59ab6e !important;
+  background-color: #26973d !important;
 }
 .btn-success {
-  background-color: #59ab6e !important;
-  border-color: #56ae6c !important;
+  background-color: #26973d !important;
+  border-color: #26973d !important;
 }
 .pagination .page-link:hover {
   color: #000;
@@ -89,14 +101,18 @@ div {
 /* Nav */
 
 #lebustore_main_nav a {
-  font-family: "Arial";
-  color: #000000c0;
-  font-size: 15px !important;
+  font-family: "lato" !important;
+  color: #ffffff;
+  font-size: 18px !important;
   font-weight: 600;
 }
 
 #lebustore_main_nav a:hover {
-  color: #69bb7e;
+  color: #c7e99f;
+}
+
+#lebustore_main_nav .active{
+  color: #c7e99f !important;
 }
 #lebustore_main_nav .navbar .nav-icon {
   margin-right: 20px;
@@ -149,10 +165,11 @@ div {
   background: none;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 .card.product-wap:hover .card .product-overlay {
   visibility: visible;
+  background-color: #000000af;
   opacity: 1;
 }
 .card.product-wap a {
@@ -183,8 +200,9 @@ div {
 }
 #Lebustore-hero-carousel .carousel-control-next i,
 #Lebustore-hero-carousel .carousel-control-prev i {
-  color: #26973d !important;
+  color: green !important;
   font-size: 2.8em !important;
+  opacity: 1;
 }
 /* Carousel Brand */
 .lebustore-carousel .h1 {
@@ -221,6 +239,10 @@ div {
 #lebustore_footer ul.footer-link-list li {
   padding-top: 10px;
 }
+#lebustore_footer ul.footer-link-list li a{
+  font-size: 18px !important;
+  font-weight: normal;
+}
 #lebustore_footer ul.footer-icons li {
   width: 2.6em;
   height: 2.6em;
@@ -246,8 +268,9 @@ div {
 .product-wap li,
 .product-wap i,
 .product-wap p {
-  font-size: 12px !important;
+  font-size: 18px !important;
 }
+
 .product-wap .product-color-dot {
   width: 6px;
   height: 6px;
@@ -278,7 +301,7 @@ div {
   .product-wap li,
   .product-wap i,
   .product-wap p {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .product-wap .product-color-dot {
     width: 12px;

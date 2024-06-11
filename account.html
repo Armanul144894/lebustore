@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore- Contact</title>
+    <title>Lebustore</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,24 +16,31 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Load fonts style after rendering the layout styles -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-
-    <!-- Load map styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
     />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/e09dd379d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    
     <section class="header-section">
       <!-- Start Top Nav -->
       <nav
@@ -94,31 +101,75 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                <i class="fas fa-user"></i> User
+                  <i class="fas fa-user"></i> User
                 </button>
-                <ul class="user-dropdown dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                <ul
+                  class="user-dropdown dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
                   <li>
                     <div class="dropdown-item d-flex gap-3">
                       <div>
-                        <img src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp" class="rounded-circle" alt="">
+                        <img
+                          src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp"
+                          class="rounded-circle"
+                          alt=""
+                        />
                       </div>
                       <div>
                         <h5 class="m-0">@user</h5>
-                        <p class="m-0 py-1" style="font-size: 16px !important;">Md Nazvi Islam</p>
-                        <button class="btn btn-success rounded-pill px-4">Edit Profile</button>
+                        <p class="m-0 py-1" style="font-size: 16px !important">
+                          Md Nazvi Islam
+                        </p>
+                        <button class="btn btn-success rounded-pill px-4">
+                          Edit Profile
+                        </button>
                       </div>
                     </div>
                   </li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i> Account</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-gift me-2"></i> My Giftcards</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fas fa-gift me-2"></i> My Offers</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-credit-card me-2"></i> Subscription</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-heart me-2"></i>My Wishlist</a></li>
-                  <hr>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Preferences</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off me-2"></i>Login</a></li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-user me-2"></i> Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Offers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-regular fa-credit-card me-2"></i>
+                      Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                    >
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -181,7 +232,6 @@
       <!-- Close Header -->
     </section>
 
-
     <!-- Modal -->
     <div
       class="modal fade bg-white"
@@ -224,105 +274,87 @@
       </div>
     </div>
 
-    <!-- Start Content Page -->
-    <div class="container-fluid bg-light py-5">
-      <div class="col-md-6 m-auto text-center">
-        <h1 class="h1">Contact Us</h1>
-        <p>
-          Proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum. Lorem ipsum dolor sit amet.
-        </p>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-0 bg-white">
+              <div class="card-body text-center">
+                <div>
+                  <img
+                    src="assets/img/AboutUs/Image3.png"
+                    class="rounded-circle img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="m-0">@user</h5>
+                  <p class="m-0 py-1" style="font-size: 16px !important">
+                    Md Nazvi Islam
+                  </p>
+                  <button class="btn btn-success rounded-pill px-4">
+                    Edit Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card border-0">
+              <div class="card-body p-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="pb-2">
+                      <h4>Account Data</h4>
+                    </div>
+
+                    <form class="row g-2">
+                      <div class="col-12">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-12">
+                        <label for="">Last Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-12">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" />
+                        <a href="">Change Email</a>
+                      </div>
+                      <div class="col-12">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </form>
+
+                    <div class="pt-5">
+                      <h5>Change Your Password</h5>
+                      <form class="row g-2">
+                        <div class="col-12">
+                          <label for="">Current Password</label>
+                          <input type="password" class="form-control" />
+                          <a href="">Change Password</a>
+                        </div>
+                        <div class="col-12">
+                          <label for="">New Password</label>
+                          <input type="password" class="form-control" />
+                        </div>
+                        
+                      </form>
+                    </div>
+
+                    <div class="pt-4">
+                        <button class="btn btn-success rounded-pill">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- Start Map -->
-    <div id="mapid" style="width: 100%; height: 300px"></div>
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
-    <script>
-      var mymap = L.map("mapid").setView([-23.013104, -43.394365, 13], 13);
-
-      L.tileLayer(
-        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
-        {
-          maxZoom: 18,
-
-          id: "mapbox/streets-v11",
-          tileSize: 512,
-          zoomOffset: -1,
-        }
-      ).addTo(mymap);
-
-      L.marker([-23.013104, -43.394365, 13])
-        .addTo(mymap)
-        .bindPopup("<b>Lebustore</b>")
-        .openPopup();
-
-      mymap.scrollWheelZoom.disable();
-      mymap.touchZoom.disable();
-    </script>
-    <!-- Ena Map -->
-
-    <!-- Start Contact -->
-    <div class="container py-5">
-      <div class="row py-5">
-        <form class="col-md-9 m-auto" method="post" role="form">
-          <div class="row">
-            <div class="form-group col-md-6 mb-3">
-              <label for="inputname">Name</label>
-              <input
-                type="text"
-                class="form-control mt-1"
-                id="name"
-                name="name"
-                placeholder="Name"
-              />
-            </div>
-            <div class="form-group col-md-6 mb-3">
-              <label for="inputemail">Email</label>
-              <input
-                type="email"
-                class="form-control mt-1"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="inputsubject">Subject</label>
-            <input
-              type="text"
-              class="form-control mt-1"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="inputmessage">Message</label>
-            <textarea
-              class="form-control mt-1"
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="8"
-            ></textarea>
-          </div>
-          <div class="row">
-            <div class="col text-end mt-2">
-              <button type="submit" class="btn btn-success btn-lg px-3">
-                Let’s Talk
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- End Contact -->
+    </section>
 
     <!-- Start Footer -->
     <footer
@@ -337,28 +369,30 @@
       <div class="py-5">
         <div
           class="container p-5"
-          style="background-color: rgba(0, 0, 0, 0.85)"
+          style="background-color: rgba(24, 23, 23, 0.85)"
         >
           <div class="row text-light mb-4 align-items-center">
-            <div class="col-12 col-lg-6 me-auto">
-              <h2>Subscribe for the best deals!</h2>
-              <p class="text-muted">
+            <div class="col-12 col-lg-6 me-auto footer-info">
+              <h3 class="text-white fw-normal">
+                Subscribe for the best deals!
+              </h3>
+              <p class="footer-info">
                 Step into the world of online discount with us.
               </p>
             </div>
             <div class="col-12 col-lg-6">
               <label class="sr-only" for="subscribeEmail text-white"
-                >Email address</label
+                >Enter Email Address</label
               >
               <div class="input-group mb-2 position-relative">
                 <input
                   type="text"
-                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
+                  class="form-control border-light text-white rounded-pill px-4 py-3"
                   id="subscribeEmail"
-                  placeholder="Email address"
+                  placeholder="Enter Email Address"
                 />
                 <div
-                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-3"
                 >
                   Subscribe
                 </div>
@@ -371,14 +405,15 @@
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
             <div class="col">
-              <a href="index.html" class="text-success pb-3 border-light logo">
-                <img src="assets/img/LebuStore.png" alt="" />
+              <a href="home.html" class="pb-3 border-light logo">
+                <img src="assets/img/lebustore-white-logo.png" alt="" />
               </a>
-              <p class="text-white py-3 footer-info text-justify">
+              <p class="py-3 footer-info text-justify">
                 It might should like a fairytale but with lebustore it's nothing
                 but the truth! where you can save, share and shop to your
                 heart's content.
               </p>
+
               <!-- <ul class="list-unstyled text-light footer-link-list">
                 <li>
                   <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -397,7 +432,7 @@
                   >
                 </li>
               </ul> -->
-              <p class="text-left text-light pt-4">
+              <p class="text-left pt-4 footer-info">
                 Copyright &copy; 2024 Company Name | Designed by
                 <a
                   rel="sponsored"
@@ -409,43 +444,39 @@
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Important Links
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
-                  <a class="text-decoration-none" href="index.html">Home</a>
+                  <a class="text-decoration-none" href="home.html">Home</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="about.html">About</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                  <a class="text-decoration-none" href="#">Discounts</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                  <a class="text-decoration-none" href="#">Coupons</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="product-details.html"
-                    >Offers</a
-                  >
+                  <a class="text-decoration-none" href="#">Offers</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="#">Partners</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="contact.html"
-                    >Contacts</a
-                  >
+                  <a class="text-decoration-none" href="#">Contacts</a>
                 </li>
               </ul>
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Categories
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
                   <a class="text-decoration-none" href="#">Electronics</a>
                 </li>
@@ -466,12 +497,12 @@
               </ul>
             </div>
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Follow Us
-              </h3>
+              </h5>
               <ul class="list-inline text-left footer-icons">
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -481,7 +512,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -491,7 +522,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -501,7 +532,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -603,11 +634,40 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/lebustore.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
+
+    <script>
+      const items = document.querySelectorAll(".product-filters ul li");
+      const products = document.querySelectorAll(".products .product");
+
+      items.forEach((item) => {
+        // Active
+        item.addEventListener("click", () => {
+          items.forEach((item) => {
+            item.classList.remove("active");
+          });
+          item.classList.add("active");
+
+          // Filter
+          const valueAttr = item.getAttribute("data-filter");
+          products.forEach((item) => {
+            item.style.display = "none";
+            if (
+              item.getAttribute("data-filter").toLowerCase() ==
+                valueAttr.toLowerCase() ||
+              valueAttr == "all"
+            ) {
+              item.style.display = "flex";
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

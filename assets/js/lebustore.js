@@ -10,19 +10,19 @@ https://lebustore.com/tm-559-Lebustore-shop
 $(document).ready(function() {
 
     // Accordion
-    var all_panels = $('.lebustore-accordion > li > ul').hide();
+    // var all_panels = $('.lebustore-accordion > li > ul').hide();
 
-    $('.lebustore-accordion > li > a').click(function() {
-        var target =  $(this).next();
-        if(!target.hasClass('active')){
-            all_panels.removeClass('active').slideUp();
-            target.addClass('active').slideDown();
-        }
-        else{
-          target.removeClass('active').slideUp()
-        }
-      return false;
-    });
+    // $('.lebustore-accordion > li > a').click(function() {
+    //     var target =  $(this).next();
+    //     if(!target.hasClass('active')){
+    //         all_panels.removeClass('active').slideUp();
+    //         target.addClass('active').slideDown();
+    //     }
+    //     else{
+    //       target.removeClass('active').slideUp()
+    //     }
+    //   return false;
+    // });
     // End accordion
 
    
@@ -59,3 +59,6 @@ $(document).ready(function() {
     // End roduct detail
 
 });
+
+
+
