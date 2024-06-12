@@ -111,8 +111,8 @@
                     <div class="dropdown-item d-flex gap-3">
                       <div>
                         <img
-                          src="https://gravatar.com/avatar/00000000000000000000000000000000?d=mp"
-                          class="rounded-circle"
+                          src="assets/img/AboutUs/Image3.png"
+                          class="rounded-circle img-thumbnail"
                           alt=""
                         />
                       </div>
@@ -129,12 +129,12 @@
                   </li>
                   <hr />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="account.html"
                       ><i class="fas fa-user me-2"></i> Account</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="my-coupons.html"
                       ><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a
                     >
                   </li>
@@ -149,7 +149,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="subscription.html"
                       ><i class="fa-regular fa-credit-card me-2"></i>
                       Subscription</a
                     >
@@ -340,12 +340,13 @@
                           <label for="">New Password</label>
                           <input type="password" class="form-control" />
                         </div>
-                        
                       </form>
                     </div>
 
                     <div class="pt-4">
-                        <button class="btn btn-success rounded-pill">Save Changes</button>
+                      <button class="btn btn-success rounded-pill">
+                        Save Changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -545,69 +546,7 @@
             </div>
           </div>
 
-          <!-- <div class="row text-light mb-4">
-            <div class="col-12 mb-3">
-              <div class="w-100 my-3 border-top border-light"></div>
-            </div>
-            <div class="col-auto me-auto">
-              <ul class="list-inline text-left footer-icons">
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="http://facebook.com/"
-                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://www.instagram.com/"
-                    ><i class="fab fa-instagram fa-lg fa-fw"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://twitter.com/"
-                    ><i class="fa-brands fa-x-twitter"></i
-                  ></a>
-                </li>
-                <li
-                  class="list-inline-item border border-light rounded-circle text-center"
-                >
-                  <a
-                    class="text-light text-decoration-none"
-                    target="_blank"
-                    href="https://www.linkedin.com/"
-                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-auto">
-              <label class="sr-only" for="subscribeEmail">Email address</label>
-              <div class="input-group mb-2">
-                <input
-                  type="text"
-                  class="form-control bg-dark border-light"
-                  id="subscribeEmail"
-                  placeholder="Email address"
-                />
-                <div class="input-group-text btn-success text-light">
-                  Subscribe
-                </div>
-              </div>
-            </div>
-          </div> -->
+          
         </div>
       </div>
 
@@ -641,33 +580,5 @@
     <script src="assets/js/lebustore.js"></script>
     <script src="assets/js/custom.js"></script>
     <!-- End Script -->
-
-    <script>
-      const items = document.querySelectorAll(".product-filters ul li");
-      const products = document.querySelectorAll(".products .product");
-
-      items.forEach((item) => {
-        // Active
-        item.addEventListener("click", () => {
-          items.forEach((item) => {
-            item.classList.remove("active");
-          });
-          item.classList.add("active");
-
-          // Filter
-          const valueAttr = item.getAttribute("data-filter");
-          products.forEach((item) => {
-            item.style.display = "none";
-            if (
-              item.getAttribute("data-filter").toLowerCase() ==
-                valueAttr.toLowerCase() ||
-              valueAttr == "all"
-            ) {
-              item.style.display = "flex";
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>
